@@ -2,6 +2,7 @@ body{
   line-height:  initial;
   margin: 0px;
   padding: 0px;
+  font-family: 'Montserrat', sans-serif;
 }
 .nav-border{
 	border-bottom: 1px solid #eee;
@@ -22,8 +23,8 @@ body{
 	background-color:  #ED65A9;
 	border: 1px solid #ED65A9;
 	border-radius: 50px;
-	padding: 5px 30px;
-  font-size: 16px;
+	padding: 5px 25px;
+  font-size: 15px;
   font-weight: 400;
   text-align: center;
   color: #fff;
@@ -169,6 +170,10 @@ body{
 .paddingTopBottom100{
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.marginTop20{
+  margin-top: 20px;
 }
 
 .marginBottom40{
@@ -423,7 +428,7 @@ body{
   top: 0;
   bottom: 0;
   margin: auto;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 .carousel_wrapper{
   width:100%;
@@ -517,6 +522,35 @@ body{
   height: 5px;
   border-radius: 50px;
   background-color: #6c3099;
+}
+
+.product_manager_carousel_section .red_border{
+  width: calc(100% - 25px);
+}
+
+.product_manager_carousel_section .carousel_wrapper .carousel{
+  width: 90%;
+  background-color: transparent;
+}
+
+.product_manager_carousel_section .carousel_wrapper .carousel .slick-list{
+  padding: 10px !important;
+}
+
+.product_manager_carousel_section .carousel_wrapper .slick-slide{
+  margin: 0px;
+  /*padding: 10px 0px;*/
+}
+
+.product_manager_carousel_section .carousel_wrapper .slick-slide img{
+  width: 95%;
+  margin: auto;
+  box-shadow: none;
+}
+
+.product_manager_carousel_section .carousel_wrapper .slick-slide.slick-active img,
+.product_manager_carousel_section .carousel_wrapper .slick-slide.slick-center img{
+  box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
 }
 
 /*footer section*/
