@@ -28,7 +28,7 @@ body {
 .sign_up_btn {
   background-color: #ff007f;
   border: 1px solid #ed65a9;
-  border-radius: 10px;
+  border-radius: 7px;
   padding: 10px 18px;
   font-size: 15px;
   font-weight: 500;
@@ -88,7 +88,7 @@ body {
 
 .cvowl_common_btn {
   border: 1px solid #6c3099;
-  border-radius: 10px;
+  border-radius: 7px;
   padding: 18px;
   background-color: transparent;
   font-family: "Montserrat", sans-serif;
@@ -257,12 +257,17 @@ body {
   display: inline-flex;
 }
 
+.review_para {
+  font-style: italic;
+  text-align: center;
+}
+
 .what_say_customers_card {
-  width: 255px;
-  height: 242px;
+  width: 415px;
+  height: 215px;
   margin: 0 30px 0 0;
   padding: 31px 16px;
-  border-radius: 16px;
+  border-radius: 6px;
   background-color: #fff;
 }
 
@@ -304,7 +309,8 @@ body {
 }
 
 .paddingLeft200 {
-  padding-left: 120px;
+  padding-left: 155px;
+  padding-right: 155px;
 }
 
 .overflowX {
@@ -597,14 +603,14 @@ body {
 
 /*footer section*/
 .footer_section {
-  background-color: #ebe8ff;
+  background-color: #6c3099;
 }
 
 .footer_heading {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 500;
-  color: #000;
+  color: #fff;
 }
 
 .footer_section li {
@@ -615,7 +621,7 @@ body {
 .footer_link {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  color: #000;
+  color: #fff;
   text-decoration: auto;
 }
 
