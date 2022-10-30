@@ -20,6 +20,11 @@ body {
   color: #000;
   padding-right: 30px;
 }
+
+.login_btn:hover {
+  color: #ff007f;
+}
+
 .sign_up_btn {
   background-color: #ff007f;
   border: 1px solid #ed65a9;
@@ -176,7 +181,12 @@ body {
 
 .paddingTopBottom40 {
   padding-top: 110px;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
+}
+
+.paddingTopBottom60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .paddingTopBottom100 {
@@ -189,7 +199,7 @@ body {
 }
 
 .marginBottom40 {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .marginBottom20 {
