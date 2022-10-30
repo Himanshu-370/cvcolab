@@ -3665,6 +3665,7 @@ fieldset:disabled .btn {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -3672,8 +3673,10 @@ fieldset:disabled .btn {
 }
 .nav-link:focus,
 .nav-link:hover {
-  color: #0a58ca;
+  /* color: #0a58ca; */
+  color: #ff007f !important;
 }
+
 .nav-link.disabled {
   color: #6c757d;
   pointer-events: none;
