@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 body {
   line-height: initial;
@@ -63,6 +64,7 @@ body {
 
 .nav-item-block svg {
   cursor: pointer;
+  margin-bottom: 0;
 }
 
 .dropdown_cont {
@@ -148,7 +150,7 @@ body {
 }
 
 .build_your {
-  font-family: "Roboto Slab", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 55px;
   text-align: left;
   color: #000;
@@ -166,7 +168,7 @@ body {
 }
 
 .text_blue {
-  font-family: "Roboto Slab", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 50px;
   font-weight: bold;
   text-align: left;
