@@ -152,7 +152,7 @@ body {
 .build_your {
   /* font-family: "Poppins", sans-serif; */
   font-family: Rubik, Arial, "Helvetica Neue", serif;
-  font-size: 55px;
+  font-size: 50px;
   text-align: left;
   color: #000;
   margin-bottom: 30px;
@@ -209,7 +209,7 @@ body {
 
 .paddingTopBottom60 {
   padding-top: 60px;
-  padding-bottom: 90px;
+  padding-bottom: 60px;
 }
 
 .paddingTopBottom100 {
