@@ -748,8 +748,9 @@ h4 {
   display: none;
 }
 
-.start-with-template-btn a {
-  opacity: 1;
+.start-with-template-btn {
+  opacity: 0;
+  padding: 10px 0 !important;
 }
 
 .start-with-template-btn:hover {
