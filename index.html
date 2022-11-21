@@ -905,6 +905,17 @@
       </article>
     </div>
 
+    <div class="popup-carrousel">
+      <span>&times;</span>
+      <img
+        loading="lazy"
+        alt="Image Not Found"
+        width="100%"
+        height=""
+        src="img/image_asset_1.png"
+      />
+    </div>
+
     <section class="forth_section">
       <div class="row">
         <!-- <div class="col-md-12 text-center logo_heading">WE'VE HELPED CANDIDATES GET JOBS IN TOP GLOBAL COMPANIES </div> -->
@@ -1973,6 +1984,19 @@
           ],
         });
       });
+    </script>
+    <script>
+      document.querySelectorAll(".carrousel img").forEach((image) => {
+        image.onclick = () => {
+          document.querySelector(".popup-carrousel").style.display = "block";
+          document.querySelector(".popup-carrousel img").src =
+            image.getAttribute("src");
+        };
+      });
+
+      document.querySelector(".popup-carrousel span").onclick = () => {
+        document.querySelector(".popup-carrousel").style.display = "none";
+      };
     </script>
   </body>
 </html>
