@@ -785,3 +785,42 @@ h4 {
 .img-carrousel-container:hover .start-with-template-btn.btn {
   opacity: 1;
 }
+
+.popup-carrousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-carrousel span {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #fff;
+  z-index: 100;
+}
+
+.popup-carrousel img {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 450px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .popup-carrousel img {
+    width: 55%;
+  }
+}
