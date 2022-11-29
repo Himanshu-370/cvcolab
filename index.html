@@ -217,8 +217,10 @@
             </li>
           </ul>
           <form class="d-flex">
-            <button class="login_btn">Sign in</button>
-            <button class="sign_up_btn">Get Started</button>
+            <a href="" style="align-items: center; display: flex"
+              ><button class="login_btn">Sign in</button></a
+            >
+            <a href=""><button class="sign_up_btn">Get Started</button></a>
           </form>
         </div>
       </div>
@@ -926,15 +928,7 @@
             </h1>
             <div class="row grid">
               <div class="col-md-3 marginBottom20">
-                <div class="img_container">
-                  <a href="#">
-                    <img
-                      src="./SVG/ATS default.svg"
-                      onmouseover="this.src='./SVG/ATS hower.svg'"
-                      onmouseout="this.src='./SVG/ATS default.svg'"
-                      alt=""
-                  /></a>
-                </div>
+                <div class="img_container" id="animation_container_ATS"></div>
                 <div class="img_container_text">
                   <h2>ATS Compliant Templates</h2>
                   <p>
@@ -945,15 +939,10 @@
                 </div>
               </div>
               <div class="col-md-3 marginBottom20">
-                <div class="img_container">
-                  <a href="#">
-                    <img
-                      src="./SVG/AI keyword default.svg"
-                      onmouseover="this.src='./SVG/AI keyword hower.svg'"
-                      onmouseout="this.src='./SVG/AI keyword default.svg'"
-                      alt=""
-                  /></a>
-                </div>
+                <div
+                  class="img_container"
+                  id="animation_container_AI_Keyword"
+                ></div>
                 <div class="img_container_text">
                   <h2>AI Keyword Suggestion</h2>
                   <p>
@@ -964,16 +953,11 @@
                 </div>
               </div>
               <div class="col-md-3 contain marginBottom20">
-                <div class="img_container">
-                  <a href="#">
-                    <img
-                      src="./SVG/Proof read default.svg"
-                      onmouseover="this.src='./SVG/Proof read hower.svg'"
-                      onmouseout="this.src='./SVG/Proof read default.svg'"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="img_container_text">
+                <div
+                  class="img_container"
+                  id="animation_container_Proof_read"
+                ></div>
+                <div class="img_container_text" id="animation_container">
                   <h2>Proof Reader</h2>
                   <p>
                     Typos and spelling errors on your resume can quickly
@@ -985,15 +969,10 @@
             </div>
             <div class="row grid">
               <div class="col-md-3">
-                <div class="img_container">
-                  <a href="#">
-                    <img
-                      src="./SVG/Achievement  default.svg"
-                      onmouseover="this.src='./SVG/Achievement  hower.svg'"
-                      onmouseout="this.src='./SVG/Achievement  default.svg'"
-                      alt=""
-                  /></a>
-                </div>
+                <div
+                  class="img_container"
+                  id="animation_container_Achievement"
+                ></div>
                 <div class="img_container_text">
                   <h2>Achievements Highlighter</h2>
                   <p>
@@ -1005,16 +984,11 @@
                 </div>
               </div>
               <div class="col-md-3">
-                <div class="img_container">
-                  <a href="#">
-                    <img
-                      src="./SVG/Responsibility default.svg"
-                      onmouseover="this.src='./SVG/Responsibility hower.svg'"
-                      onmouseout="this.src='./SVG/Responsibility default.svg'"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="img_container_text">
+                <div
+                  class="img_container"
+                  id="animation_container_responsibility_verification"
+                ></div>
+                <div class="img_container_text" id="animation_container">
                   <h2>Responsibilities Verification</h2>
                   <p>
                     Listing achievements is what differentiates the top
@@ -1025,15 +999,10 @@
                 </div>
               </div>
               <div class="col-md-3 marginBottom20">
-                <div class="img_container">
-                  <a href="#">
-                    <img
-                      src="./SVG/Video resume default.svg"
-                      onmouseover="this.src='./SVG/Video resume hower.svg'"
-                      onmouseout="this.src='./SVG/Video resume default.svg'"
-                      alt=""
-                  /></a>
-                </div>
+                <div
+                  class="img_container"
+                  id="animation_container_Video_resume"
+                ></div>
                 <div class="img_container_text">
                   <h2>Video Resume</h2>
                   <p>
@@ -1894,6 +1863,59 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/homepagescript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+
+    <script>
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("animation_container_ATS"),
+        path: "Json/ATS.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("animation_container_AI_Keyword"),
+        path: "Json/Ai keyword.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("animation_container_Proof_read"),
+        path: "Json/Proof read.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("animation_container_Achievement"),
+        path: "Json/Achievement .json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById(
+          "animation_container_responsibility_verification"
+        ),
+        path: "Json/responsibility verification.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("animation_container_Video_resume"),
+        path: "Json/Video resume.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+    </script>
 
     <script>
       const readMoreBtn = document.querySelector(".read-more-btn");
@@ -1921,6 +1943,7 @@
           autoplaySpeed: 0,
           speed: 8000,
           cssEase: "linear",
+          pauseOnHover: true,
           responsive: [
             {
               breakpoint: 1024,
