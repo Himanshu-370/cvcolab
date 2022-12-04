@@ -31,8 +31,8 @@ body {
 .sign_up_btn {
   background-color: #ff007f;
   border: 1px solid #ed65a9;
-  border-radius: 7px;
-  padding: 10px 18px;
+  border-radius: 38px;
+  padding: 8px 38px;
   font-size: 15px;
   font-weight: 500;
   text-align: center;
@@ -109,15 +109,15 @@ body {
 
 .cvowl_common_btn {
   border: 1px solid #6c3099;
-  border-radius: 7px;
-  padding: 18px;
+  border-radius: 38px;
+  padding: 11px;
   background-color: transparent;
   font-family: "Montserrat", sans-serif;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 500;
   text-align: center;
   color: #000;
-  min-width: 235px;
+  min-width: 250px;
   margin-bottom: 0.5rem;
 }
 
@@ -152,7 +152,7 @@ body {
 
 .build_your {
   /* font-family: "Poppins", sans-serif; */
-  font-family: Rubik, Arial, "Helvetica Neue", serif;
+  font-family: Playfair Display, serif;
   font-size: 50px;
   text-align: left;
   color: #000;
@@ -171,9 +171,9 @@ body {
 
 .text_blue {
   /* font-family: "Poppins", sans-serif; */
-  font-family: Rubik, Arial, Helvetica, serif;
+  font-family: Playfair Display, serif;
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 900;
   text-align: left;
   color: #6c3099;
 }
@@ -188,7 +188,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   text-align: left;
-  color: #000;
+  color: #747474;
   margin-bottom: 30px;
   line-height: 1.5rem;
 }
@@ -305,8 +305,8 @@ body {
 }
 
 .what_say_customers_card {
-  width: 415px;
-  height: 215px;
+  width: 350px;
+  height: 254px;
   margin: 0 30px 0 0;
   padding: 31px 16px;
   border-radius: 6px;
@@ -324,7 +324,6 @@ body {
 .what_say_customers_card h3 {
   display: flex;
   justify-content: space-between;
-
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 500;
@@ -356,7 +355,12 @@ body {
 }
 
 .overflowX {
-  overflow-x: auto;
+  /* overflow-x: auto; */
+  overflow: scroll;
+}
+
+.overflowX::-webkit-scrollbar {
+  display: none;
 }
 
 .searches_input input {
