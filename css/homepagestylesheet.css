@@ -166,7 +166,7 @@ body {
 }
 
 .third_section p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.7rem;
   text-align: center;
 }
@@ -191,7 +191,7 @@ body {
   font-size: 16px;
   text-align: left;
   color: #747474;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   line-height: 1.5rem;
 }
 
@@ -430,7 +430,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: #000;
-  margin-top: 0.3em;
+  margin-top: 0.4em;
 }
 
 #half-stars-example .rating-group {
@@ -734,7 +734,7 @@ h4 {
 .card-carrousel {
   scroll-snap-align: start;
   border: 1px solid black;
-  border-radius: 7px;
+  border-radius: 1px;
   min-height: 100px;
   min-width: 200px;
   display: block !important;
@@ -867,13 +867,10 @@ h4 {
   }
 
   .logo_container {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap;
     margin: 0 !important;
     padding: 0 !important;
-  }
-
-  .logo_container {
-    gap: 2rem !important;
+    gap: 2rem !important; */
   }
 
   .logo_section img {
