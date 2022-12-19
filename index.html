@@ -1181,14 +1181,15 @@
           </button>
         </div>
 
-        <img
+        <div class="" id="progress_image"></div>
+        <!-- <img
           loading="lazy"
           alt="Image Not Found"
           width="400px"
           height=""
           class=""
           src="img/reviewe_it_in_60_second.svg"
-        />
+        /> -->
       </div>
 
       <div class="row fifth_row" id="cover_letter_maker">
@@ -2286,8 +2287,16 @@
 
     <script>
       var animation = bodymovin.loadAnimation({
+        container: document.getElementById("progress_image"),
+        path: "Json/progres.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
         container: document.getElementById("animation_container_character"),
-        path: "Json/character.json",
+        path: "Json/tick.json",
         loop: true,
         autoplay: true,
         name: "demo animation",
@@ -2359,20 +2368,7 @@
       });
     </script>
 
-    <script>
-      // $(document).ready(function () {
-      //   $(".what_say_customers_card_container").slick({
-      //     dots: false,
-      //     infinite: true,
-      //     slidesToShow: 3,
-      //     slidesToScroll: 1,
-      //     autoplay: true,
-      //     autoplaySpeed: 2000,
-      //   });
-      // });
-    </script>
-
-    <script>
+    <!-- <script>
       $(document).ready(function () {
         $(".carrousel").slick({
           dots: false,
@@ -2409,7 +2405,7 @@
           ],
         });
       });
-    </script>
+    </script> -->
 
     <script>
       $(document).ready(function () {
