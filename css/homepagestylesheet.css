@@ -735,8 +735,8 @@ h4 {
   scroll-snap-align: start;
   border: 1px solid black;
   border-radius: 1px;
-  min-height: 100px;
-  min-width: 200px;
+  min-height: 150px;
+  min-width: 250px;
   display: block !important;
   align-items: center !important;
   justify-content: center !important;
