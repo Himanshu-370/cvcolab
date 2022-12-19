@@ -191,7 +191,7 @@ body {
   font-size: 16px;
   text-align: left;
   color: #747474;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
   line-height: 1.5rem;
 }
 
@@ -876,4 +876,8 @@ h4 {
   .logo_section img {
     max-width: 170%;
   }
+}
+
+.resume_test {
+  margin-bottom: 1rem;
 }
