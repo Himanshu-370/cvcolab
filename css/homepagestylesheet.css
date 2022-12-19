@@ -8,10 +8,12 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
+
 .nav-border {
   border-bottom: 1px solid #eee;
   box-shadow: 0px 0px 5px 1px #eee;
 }
+
 .login_btn {
   background-color: transparent;
   border: none;
@@ -305,6 +307,16 @@ body {
 
 .what_say_customers_card_container {
   display: inline-flex;
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 3));
+  }
 }
 
 .review_para {
@@ -319,7 +331,6 @@ body {
   padding: 31px 16px;
   border-radius: 6px;
   background-color: #fff;
-  transition: transform 0.5s ease-in-out;
 }
 
 .what_our_customer .build_your {
@@ -350,11 +361,7 @@ body {
 
 .overflowX {
   /* overflow-x: auto; */
-  overflow: scroll;
-}
-
-.overflowX::-webkit-scrollbar {
-  display: none;
+  overflow: hidden;
 }
 
 .searches_input input {
@@ -366,9 +373,6 @@ body {
   border-radius: 22.5px;
   border: solid 2px #6c3099;
   width: 90%;
-}
-
-.searches_input_anser_btn_container {
 }
 
 .cvowl_common_question_anser_btn {
@@ -722,13 +726,9 @@ h4 {
 .carrousel {
   display: grid;
   grid-auto-flow: column;
-  scroll-behavior: auto;
   gap: 1.2rem;
-  overflow-y: auto;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
   margin: 0 2rem 2rem;
+  animation: scroll 30s linear infinite;
 }
 
 .card-carrousel {
@@ -741,11 +741,14 @@ h4 {
   align-items: center !important;
   justify-content: center !important;
   cursor: pointer;
-  overflow: hidden;
 }
 
 .card-carrousel:hover {
   border: 3px solid #6c3099;
+}
+
+.carrousel:hover {
+  animation-play-state: paused;
 }
 
 .img-carrousel-container {
