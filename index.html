@@ -1,959 +1,2760 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
-
-body {
-  line-height: initial;
-  margin: 0px;
-  padding: 0px;
-  font-family: "Montserrat", sans-serif;
-  overflow-x: hidden !important;
-}
-
-.nav-border {
-  border-bottom: 1px solid #eee;
-  box-shadow: 0px 0px 5px 1px #eee;
-}
-
-.login_btn {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: left;
-  color: #000;
-  padding-right: 30px;
-}
-
-.login_btn:hover {
-  color: #ff007f;
-}
-
-.sign_up_btn {
-  background-color: #ff007f;
-  border: 1px solid #ed65a9;
-  border-radius: 38px;
-  padding: 8px 38px;
-  font-size: 15px;
-  font-weight: 500;
-  text-align: center;
-  color: #fff;
-}
-
-#navbarTogglerDemo01 .navbar-nav .nav-item .nav-link {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  text-align: left;
-  color: #000;
-  font-weight: 500;
-}
-
-#navbarTogglerDemo01 .navbar-nav .nav-item {
-  position: relative;
-  display: inline-block;
-  margin: 0 0.2rem;
-}
-
-#navbarTogglerDemo01 .navbar-nav .nav-item:hover .dropdown_cont {
-  display: block;
-}
-
-.nav-item-block {
-  display: flex;
-  align-items: center;
-}
-
-.nav-item-block svg {
-  cursor: pointer;
-  margin-bottom: 0;
-}
-
-.dropdown_cont {
-  display: none;
-  min-width: 170px;
-  position: absolute;
-  top: 73px;
-  left: -10px;
-  padding: 10px 0px 0px 0px;
-  border-top: 0.1875rem solid rgb(255, 0, 127);
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0.3125rem;
-  border-bottom-left-radius: 0.3125rem;
-  box-shadow: 0px 12px 15px rgb(255, 0, 127, 0.1);
-  background-color: #ffff;
-}
-
-.dropdown_cont.cover_letter_dropdown {
-  min-width: 200px;
-}
-
-.dropdown_cont ul {
-  padding-left: 0px;
-}
-
-.dropdown_cont ul li {
-  list-style: none;
-  padding: 0px 15px 10px 15px;
-}
-
-.dropdown_cont ul li a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  color: #000;
-  text-decoration: none;
-}
-
-.dropdown_cont ul li a:hover {
-  color: #ff007f;
-}
-
-.cvowl_common_btn {
-  border: 1px solid #6c3099;
-  border-radius: 38px;
-  padding: 11px;
-  background-color: transparent;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  color: #000;
-  min-width: 250px;
-  margin-bottom: 0.5rem;
-}
-
-.cvowl_common_btn.show_back {
-  background-color: #6c3099;
-  color: #fff;
-  /* margin-bottom: 0.5rem; */
-}
-.cvowl_common_btn:hover {
-  border-color: #ed65a9;
-}
-.cvowl_common_btn.show_back:hover {
-  background-color: #ed65a9;
-}
-
-.cvowl_common_small_btn_container {
-  margin-bottom: 20px;
-}
-
-.cvowl_common_small_btn {
-  border-radius: 15.5px;
-  border: solid 1px #e5e5e5;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #6c3099;
-  background-color: transparent;
-  padding: 5px 10px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-}
-
-.build_your {
-  /* font-family: "Poppins", sans-serif; */
-  font-family: Playfair Display, serif;
-  font-size: 50px;
-  text-align: left;
-  color: #000;
-  margin-bottom: 30px;
-}
-
-.third_section h1 {
-  text-align: center;
-}
-
-.third_section p {
-  font-size: 18px;
-  line-height: 1.7rem;
-  text-align: center;
-}
-
-.text_blue {
-  /* font-family: "Poppins", sans-serif; */
-  font-family: Playfair Display, serif;
-  font-size: 50px;
-  font-weight: 900;
-  text-align: left;
-  color: #6c3099;
-}
-
-.build_your_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.build_your_container p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  text-align: left;
-  color: #747474;
-  margin-bottom: 23px;
-  line-height: 1.5rem;
-}
-
-.fold_banner_img {
-  width: 100%;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  max-width: 80%;
-}
-
-.paddingTopBottom20 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.paddingTopBottom40 {
-  padding-top: 110px;
-  padding-bottom: 80px;
-}
-
-.paddingTopBottom60 {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.paddingTopBottom100 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.marginTop20 {
-  margin-top: 20px;
-}
-
-.marginBottom40 {
-  margin-bottom: 60px;
-}
-
-.marginBottom80 {
-  margin-bottom: 80px;
-}
-
-.marginBottom20 {
-  margin-bottom: 20px;
-}
-
-/*.logo_section .companies_logo_cont img{
-  width: 100%;
-}*/
-
-.logo_heading {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  color: #000;
-  padding-bottom: 20px;
-}
-
-.img_container {
-  /* padding: 10px; */
-  border-radius: 16px;
-  background-color: #fff;
-  height: auto;
-  margin-bottom: 0.5rem;
-}
-
-@media (max-width: 767px) {
-  .img_container {
-    /* height: 40vh; */
-    /* width: 50vw; */
-  }
-}
-
-.img_container_text {
-  padding-top: 20px;
-}
-
-.img_container_text h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  color: #000;
-  min-height: 60px;
-}
-
-.img_container_text p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  color: #000;
-  line-height: initial;
-}
-
-.sixth_section {
-  background-color: #ebe8ff;
-}
-
-.what_say_customers_card_container {
-  display: inline-flex;
-  animation: scroll 40s linear infinite;
-  overflow-x: scroll;
-}
-
-.what_say_customers_card_container::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-  background: transparent;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-350px * 3));
-  }
-}
-
-.review_para p {
-  font-style: italic !important;
-  text-align: center;
-}
-
-.what_say_customers_card {
-  width: 350px;
-  height: 254px;
-  margin: 0 30px 0 0;
-  padding: 31px 16px;
-  border-radius: 6px;
-  background-color: #fff;
-}
-
-.customers-card-container {
-  width: 370px;
-  height: auto;
-  margin: 0 30px 0 0;
-  border-radius: 6px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.customer-content {
-  padding: 31px 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.stars {
-  margin: auto;
-}
-
-.reviewer-col {
-  background-color: #edf6ff;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 0 0 6px 6px;
-}
-
-.customers-card-container:hover ~ .reviewer-col {
-  background-image: -webkit-linear-gradient(
-    150deg,
-    #141da2 10%,
-    #9b5cf6 100%
-  ) !important;
-  color: white !important;
-}
-
-.what_our_customer .build_your {
-  font-size: 40px;
-}
-
-.what_our_customer .text_blue {
-  font-size: 40px;
-}
-
-.what_say_customers_card sub {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  color: #000;
-}
-
-.what_say_customers_card p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  color: #000;
-  padding-top: 8px;
-}
-
-.paddingLeft200 {
-  padding-left: 155px;
-  padding-right: 155px;
-}
-
-.overflowX {
-  /* overflow-x: auto; */
-  overflow: hidden;
-}
-
-.searches_input input {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #000;
-  padding: 8px;
-  border-radius: 22.5px;
-  border: solid 2px #6c3099;
-  width: 90%;
-}
-
-.cvowl_common_question_anser_btn {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  color: #6c3099;
-  padding: 8px 15px 8px 8px;
-  border-radius: 15.5px;
-  border: solid 1px #e5e5e5;
-  background-color: transparent;
-  margin: 10px 10px 0px 0px;
-  position: relative;
-}
-
-.cvowl_common_question_anser_btn.active,
-.cvowl_common_question_anser_btn:hover {
-  background-color: #ed1e79;
-  color: #fff;
-}
-
-.cvowl_common_question_anser_btn.active:before,
-.cvowl_common_question_anser_btn.active:after,
-.cvowl_common_question_anser_btn:hover:before,
-.cvowl_common_question_anser_btn:hover:after {
-  position: absolute;
-  top: 2px;
-  bottom: 0;
-  right: 8px;
-  content: " ";
-  height: 8px;
-  width: 2px;
-  background-color: #fff;
-  margin: auto;
-  z-index: 9;
-}
-.cvowl_common_question_anser_btn.active:before,
-.cvowl_common_question_anser_btn:hover:before {
-  transform: rotate(45deg);
-}
-.cvowl_common_question_anser_btn.active:after,
-.cvowl_common_question_anser_btn:hover:after {
-  transform: rotate(-45deg);
-}
-
-/*start rating*/
-
-.rating_section {
-  margin-top: 25px;
-  display: flex;
-  align-content: center;
-}
-
-.stars_rate {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  color: #000;
-  margin-top: 0.4em;
-}
-
-#half-stars-example .rating-group {
-  display: inline-flex;
-  margin-top: 0.3em;
-}
-#half-stars-example .rating__icon {
-  pointer-events: none;
-}
-#half-stars-example .rating__input {
-  position: absolute !important;
-  left: -9999px !important;
-}
-#half-stars-example .rating__label {
-  cursor: pointer;
-  /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
-  padding: 0 0.1em;
-  font-size: 1.4rem;
-}
-#half-stars-example .rating__label--half {
-  padding-right: 0;
-  margin-right: -0.6em;
-  z-index: 2;
-}
-#half-stars-example .rating__icon--star {
-  color: orange;
-}
-#half-stars-example .rating__icon--none {
-  color: #eee;
-}
-#half-stars-example
-  .rating__input--none:checked
-  + .rating__label
-  .rating__icon--none {
-  color: red;
-}
-#half-stars-example
-  .rating__input:checked
-  ~ .rating__label
-  .rating__icon--star {
-  color: #ddd;
-}
-#half-stars-example .rating-group:hover .rating__label .rating__icon--star,
-#half-stars-example
-  .rating-group:hover
-  .rating__label--half
-  .rating__icon--star {
-  color: orange;
-}
-#half-stars-example .rating__input:hover ~ .rating__label .rating__icon--star,
-#half-stars-example
-  .rating__input:hover
-  ~ .rating__label--half
-  .rating__icon--star {
-  color: #ddd;
-}
-#half-stars-example
-  .rating-group:hover
-  .rating__input--none:not(:hover)
-  + .rating__label
-  .rating__icon--none {
-  color: #eee;
-}
-#half-stars-example
-  .rating__input--none:hover
-  + .rating__label
-  .rating__icon--none {
-  color: red;
-}
-
-/*slick*/
-.carousel_section {
-  position: relative;
-}
-.red_border {
-  height: 190px;
-  width: 90%;
-  border: 2px solid #ed1e79;
-  border-radius: 16px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  /*z-index: -1;*/
-}
-.carousel_wrapper {
-  width: 100%;
-  padding-top: 20px;
-  text-align: center;
-}
-.carousel_wrapper .carousel {
-  width: 95%;
-  margin: 0px auto;
-  background-color: #fff;
-}
-.carousel_wrapper .carousel .slick-list {
-  padding: 12px 50px 12px 12px !important;
-  position: relative;
-}
-.carousel_wrapper .slick-slide {
-  margin: 0px 10px 0px 0px;
-  /*zoom: 0.7;*/
-}
-/*.carousel_wrapper .slick-slide.slick-active.slick-center{
-  zoom: 1;
-}*/
-.carousel_wrapper .slick-slide img {
-  width: 380px;
-  height: 480px;
-  border: 2px solid #fff;
-  box-shadow: -8px 4px 12px 0 rgb(0 0 0 / 16%);
-}
-.carousel_wrapper .slick-dots li button:before {
-  font-size: 20px;
-  color: white;
-}
-
-.carousel_wrapper .carousel button.slick-next,
-.carousel_wrapper .carousel button.slick-prev {
-  position: absolute;
-  top: 0px;
-  height: 100%;
-  width: 47px;
-  border: none;
-  background-color: transparent;
-  color: transparent;
-}
-
-.carousel_wrapper .carousel button.slick-next {
-  right: 0;
-}
-
-.carousel_wrapper .carousel button.slick-prev {
-  left: 0;
-  z-index: 9;
-}
-
-.carousel_wrapper .carousel .slick-dots {
-  display: flex;
-  padding: 0px;
-  justify-content: center;
-  padding-top: 15px;
-}
-
-.carousel_wrapper .carousel .slick-dots li {
-  list-style: none;
-  margin: 0px 5px;
-  /*width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #fff;*/
-}
-
-.carousel_wrapper .carousel .slick-dots li button {
-  border: none;
-  background-color: transparent;
-  color: #e5e5e5;
-  position: relative;
-}
-
-.carousel_wrapper .carousel .slick-dots li.slick-active button {
-  min-width: 60px;
-  text-align: end;
-  color: #ed1e79;
-}
-
-.carousel_wrapper .carousel .slick-dots li.slick-active button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 18px;
-  margin: auto;
-  width: 40px;
-  height: 5px;
-  border-radius: 50px;
-  background-color: #6c3099;
-}
-
-.product_manager_carousel_section .red_border {
-  width: calc(100% - 25px);
-}
-
-.product_manager_carousel_section .carousel_wrapper .carousel {
-  width: 90%;
-  background-color: transparent;
-}
-
-.product_manager_carousel_section .carousel_wrapper .carousel .slick-list {
-  padding: 10px !important;
-}
-
-.product_manager_carousel_section .carousel_wrapper .slick-slide {
-  margin: 0px;
-  /*padding: 10px 0px;*/
-}
-
-.product_manager_carousel_section .carousel_wrapper .slick-slide img {
-  width: 95%;
-  margin: auto;
-  box-shadow: none;
-}
-
-.product_manager_carousel_section
-  .carousel_wrapper
-  .slick-slide.slick-active
-  img,
-.product_manager_carousel_section
-  .carousel_wrapper
-  .slick-slide.slick-center
-  img {
-  box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
-}
-
-@media (max-width: 991.98px) {
-  .padding {
-    padding: 1.5rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .padding {
-    padding: 1rem;
-  }
-}
-
-.padding {
-  padding: 5rem;
-}
-
-.card {
-  position: relative;
-  display: flex;
-  /* width: 350px; */
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid #d2d2dc;
-  border-radius: 11px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
-  box-shadow: 0px 0px 5px 0px rgb(161, 163, 164);
-}
-
-.card .card-body {
-  padding: 1rem 1rem;
-}
-
-.card-body {
-  flex: 1 1 auto;
-  padding: 1.25rem;
-}
-
-p {
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.5rem;
-  font-family: "Montserrat", sans-serif;
-}
-
-h4 {
-  /* line-height: 0.2 !important; */
-}
-.profile {
-  margin-top: 16px;
-  margin-left: 11px;
-}
-
-.profile-pic {
-  width: 58px;
-}
-
-.cust-name {
-  font-size: 18px;
-}
-
-.cust-profession {
-  font-size: 10px;
-}
-
-.items {
-  /* width: 90%; */
-  margin: 0px auto;
-  /* margin-top: 100px */
-}
-
-.slick-slide {
-  margin: 10px;
-}
-
-.carrousel {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 1.2rem;
-  margin: 0 2rem 2rem;
-  animation: scroll 30s linear infinite;
-  /* overflow-x: hidden; */
-}
-
-@media (max-width: 500px) {
-  .carrousel {
-    width: 100%;
-    height: 250px;
-  }
-
-  .card-carrousel {
-    width: 100%;
-    height: 250px;
-  }
-}
-
-.card-carrousel {
-  /* scroll-snap-align: start;
-  border: 1px solid black;
-  border-radius: 1px;
-  min-height: 150px;
-  min-width: 250px;
-  display: block !important;
-  align-items: center !important;
-  justify-content: center !important;
-  cursor: pointer; */
-  display: block;
-  scroll-snap-align: start;
-  cursor: pointer;
-  align-items: center;
-  height: auto;
-  width: 300px;
-  margin-right: 1.2rem;
-  border: 1px solid black;
-  border-radius: 3px;
-  background-color: #fff;
-}
-
-.card-carrousel:hover {
-  border: 3px solid #6c3099;
-}
-
-.pauseCarrousel {
-  margin-bottom: 4rem;
-}
-
-.pauseCarrousel:hover {
-  animation-play-state: paused;
-}
-
-.img-carrousel-container {
-  position: relative;
-}
-
-.img-carrousel-container .btn.zoom {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  opacity: 0;
-  padding: 0px;
-  background: #fff;
-}
-
-.img-carrousel-container .start-with-template-btn.btn {
-  position: absolute;
-  bottom: 0px;
-  left: 8px;
-  right: 8px;
-  opacity: 0;
-  padding: 10px 0px;
-  font-size: 14px;
-  font-weight: 500;
-  width: calc(100% - 16px);
-}
-
-.more-text {
-  display: none;
-}
-
-.img-carrousel-container:hover .btn.zoom {
-  opacity: 1;
-}
-
-.img-carrousel-container:hover .start-with-template-btn.btn {
-  opacity: 1;
-}
-
-.popup-carrousel {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.9);
-  height: 100%;
-  width: 100%;
-  z-index: 100;
-  display: none;
-}
-
-.popup-carrousel span {
-  position: absolute;
-  top: 50px;
-  right: 10px;
-  font-size: 60px;
-  font-weight: bolder;
-  cursor: pointer;
-  color: #fff;
-  z-index: 100;
-}
-
-.popup-carrousel img {
-  position: absolute;
-  top: 26em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 5px solid #fff;
-  border-radius: 5px;
-  max-width: 28rem;
-  object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  .popup-carrousel img {
-    max-width: 55%;
-  }
-}
-
-.seventh_section {
-  display: flex;
-}
-
-.seventh_image {
-  z-index: 1;
-}
-
-.seventh_content {
-  z-index: 99;
-  position: relative;
-  left: 15%;
-}
-
-@media (max-width: 768px) {
-  .seventh_section {
-    overflow-x: hidden;
-  }
-
-  .cover_letter_maker_img {
-    order: 2;
-  }
-
-  .cover_letter_maker_content {
-    order: 1;
-  }
-
-  .fifth_section img {
-    padding-top: 3em;
-  }
-
-  .fifth_row img {
-    width: 300px !important;
-  }
-
-  .overflowX {
-    max-width: 100%;
-  }
-
-  .logo_container img {
-    display: inline-block;
-    margin: 0.5rem;
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-.resume_test {
-  margin-bottom: 1rem;
-}
-
-.logo_container {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.logo_section {
-  background-color: #ebe8ff;
-  min-height: 100px;
-  /* place-content: center; */
-}
-
-.logo_container img {
-  max-width: 100%;
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>CvOwl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/homepagestylesheet.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light nav-border navbar-fixed-top"
+    >
+      <div class="container container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">
+            <img
+              loading="lazy"
+              alt="Image Not Found"
+              width="100%"
+              height=""
+              src="img/CvOwl_logo.svg"
+            />
+          </a>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <div class="nav-item-block">
+                <a class="nav-link" aria-current="page" href="#">Features</a>
+                <svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg>
+              </div>
+              <div class="dropdown_cont cover_letter_dropdown">
+                <ul>
+                  <li>
+                    <a href="https://www.cvowl.com/">Resume Builder</a>
+                  </li>
+                  <li>
+                    <a href="#cover_letter_maker">Cover Letter Builder</a>
+                  </li>
+                  <li>
+                    <a href="#sop_builder">SOP Builder</a>
+                  </li>
+                  <li>
+                    <a href="#resume_review_maker">Resume Review</a>
+                  </li>
+                  <li>
+                    <a href="https://www.cvowl.com/pricing">Resume Services</a>
+                  </li>
+                  <li>
+                    <a href="https://jobs.cvowl.com/">Job Portal</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <div class="nav-item-block">
+                <a class="nav-link" aria-current="page" href="#">Resume</a>
+                <svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg>
+              </div>
+              <div class="dropdown_cont">
+                <ul>
+                  <li>
+                    <a href="https://www.cvowl.com/">Resume Builder</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.cvowl.com/resume-writing/free-resume-samples"
+                      >Resume Samples</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.cvowl.com/resume/how-to-create-resume"
+                      >How to Write a Resume</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.cvowl.com/interviews/different-type-of-resume-formats"
+                      >Resume Formats</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.cvowl.com/resume/skills-to-include-in-your-resume"
+                      >Resume Skills</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.cvowl.com/resume/resume-keywords-guide-cv-maker"
+                      >Resume Keywords</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.cvowl.com/cv-review">Resume Review</a>
+                  </li>
+                  <li>
+                    <a href="https://www.cvowl.com/pricing">Resume Services</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-item-block">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Cover Letter</a
+                >
+                <svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg>
+              </div>
+              <div class="dropdown_cont cover_letter_dropdown">
+                <ul>
+                  <li>
+                    <a href="https://www.cvowl.com/">Cover letter Builder</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.cvowl.com/coverletter/free-cover-letter-samples"
+                      >Cover letter Samples</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.cvowl.com/cover-letter/how-to-write-a-cover-letter"
+                      >How to Write a Cover Letter</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.cvowl.com/cover-letter/10-tips-to-write-professional-cover-letter"
+                      >Cover Letter Tips</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.cvowl.com/cover-letter/cover-letter-keywords"
+                      >Cover Letter Keywords</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.cvowl.com/pricing"
+                      >Cover Letter Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.cvowl.com/cv-review"
+                      >Cover Letter Review</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a href="" style="align-items: center; display: flex"
+              ><button class="login_btn">Sign in</button></a
+            >
+            <a href=""><button class="sign_up_btn">Get Started</button></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container paddingTopBottom40 first_section">
+      <div class="row">
+        <div class="col-md-6 build_your_container" s>
+          <h1 class="build_your">
+            Build your<span class="text_blue"> Resume</span>
+          </h1>
+          <div class="resume_test">
+            <div class="resume_text" style="display: flex">
+              <div
+                class="checkpoints"
+                style="display: flex; margin-bottom: -1rem"
+              >
+                <div style="display: flex; margin-right: 5px">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="12" cy="12" r="12" fill="#F4EBFE"></circle>
+                    <g clip-path="url(#clip0_1108_4065)">
+                      <path
+                        d="M16.5327 6.05352L10.6653 13.7132L5.76614 11.6054L6.08475 13.1061L11.4024 16.8922L17.0086 7.50994L16.5327 6.05352Z"
+                        fill="#6962DD"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1108_4065">
+                        <rect
+                          width="12"
+                          height="12"
+                          fill="white"
+                          transform="translate(4.65137 7.75732) rotate(-15)"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <p
+                  style="
+                    align-items: center;
+                    display: flex;
+                    font-size: 18px;
+                    font-weight: 400;
+                    /* line-height: 16px; */
+                    text-align: left;
+                  "
+                >
+                  Create resumes with AI Based Resume Optimizer
+                </p>
+              </div>
+            </div>
+            <div class="resume_text" style="display: flex">
+              <div
+                class="checkpoints"
+                style="display: flex; margin-bottom: -1rem"
+              >
+                <div style="display: flex; margin-right: 5px">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="12" cy="12" r="12" fill="#F4EBFE"></circle>
+                    <g clip-path="url(#clip0_1108_4065)">
+                      <path
+                        d="M16.5327 6.05352L10.6653 13.7132L5.76614 11.6054L6.08475 13.1061L11.4024 16.8922L17.0086 7.50994L16.5327 6.05352Z"
+                        fill="#6962DD"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1108_4065">
+                        <rect
+                          width="12"
+                          height="12"
+                          fill="white"
+                          transform="translate(4.65137 7.75732) rotate(-15)"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <p
+                  style="
+                    align-items: center;
+                    display: flex;
+                    font-size: 18px;
+                    font-weight: 400;
+                    /* line-height: 16px; */
+                    text-align: left;
+                  "
+                >
+                  Recruiter's Approved Resume Templates
+                </p>
+              </div>
+            </div>
+            <div class="resume_text" style="display: flex">
+              <div
+                class="checkpoints"
+                style="display: flex; margin-bottom: -1rem"
+              >
+                <div style="display: flex; margin-right: 5px">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="12" cy="12" r="12" fill="#F4EBFE"></circle>
+                    <g clip-path="url(#clip0_1108_4065)">
+                      <path
+                        d="M16.5327 6.05352L10.6653 13.7132L5.76614 11.6054L6.08475 13.1061L11.4024 16.8922L17.0086 7.50994L16.5327 6.05352Z"
+                        fill="#6962DD"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1108_4065">
+                        <rect
+                          width="12"
+                          height="12"
+                          fill="white"
+                          transform="translate(4.65137 7.75732) rotate(-15)"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <p
+                  style="
+                    align-items: center;
+                    display: flex;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    text-align: left;
+                  "
+                >
+                  Resume Samples written by Certified
+                  Professional Resume Writers
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <button type="button" class="cvowl_common_btn show_back">
+              Build Resume
+            </button>
+
+            <button type="button" class="cvowl_common_btn">
+              Build Cover Letter
+            </button>
+          </div>
+
+          <div class="rating_section">
+            <div>
+              <img
+                loading="lazy"
+                alt="Image Not Found"
+                width="40px"
+                height=""
+                src="img/googlelogo.png"
+              />
+            </div>
+            <div id="half-stars-example">
+              <div class="rating-group">
+                <label
+                  aria-label="1 stars"
+                  class="rating__label"
+                  for="rating2-0"
+                  >&nbsp;</label
+                >
+                <label
+                  aria-label="0.5 stars"
+                  class="rating__label rating__label--half"
+                  for="rating2-05"
+                  ><i
+                    class="rating__icon rating__icon--star fa fa-star-half"
+                  ></i
+                ></label>
+
+                <label
+                  aria-label="1 star"
+                  class="rating__label"
+                  for="rating2-10"
+                  ><i class="rating__icon rating__icon--star fa fa-star"></i
+                ></label>
+
+                <label
+                  aria-label="1.5 stars"
+                  class="rating__label rating__label--half"
+                  for="rating2-15"
+                  ><i
+                    class="rating__icon rating__icon--star fa fa-star-half"
+                  ></i
+                ></label>
+
+                <label
+                  aria-label="2 stars"
+                  class="rating__label"
+                  for="rating2-20"
+                  ><i class="rating__icon rating__icon--star fa fa-star"></i
+                ></label>
+
+                <label
+                  aria-label="2.5 stars"
+                  class="rating__label rating__label--half"
+                  for="rating2-25"
+                  ><i
+                    class="rating__icon rating__icon--star fa fa-star-half"
+                  ></i
+                ></label>
+
+                <label
+                  aria-label="3 stars"
+                  class="rating__label"
+                  for="rating2-30"
+                  ><i class="rating__icon rating__icon--star fa fa-star"></i
+                ></label>
+
+                <label
+                  aria-label="3.5 stars"
+                  class="rating__label rating__label--half"
+                  for="rating2-35"
+                  ><i
+                    class="rating__icon rating__icon--star fa fa-star-half"
+                  ></i
+                ></label>
+
+                <label
+                  aria-label="4 stars"
+                  class="rating__label"
+                  for="rating2-40"
+                  ><i class="rating__icon rating__icon--star fa fa-star"></i
+                ></label>
+
+                <label
+                  aria-label="4.5 stars"
+                  class="rating__label rating__label--half"
+                  for="rating2-45"
+                  ><i
+                    class="rating__icon rating__icon--star fa fa-star-half"
+                  ></i
+                ></label>
+
+                <label
+                  aria-label="5 stars"
+                  class="rating__label"
+                  for="rating2-50"
+                  ><i class="rating__icon rating__icon--star fa fa-star"></i
+                ></label>
+              </div>
+            </div>
+            <div class="stars_rate">4.9 Stars</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="./SVG/Hero default.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="second_section">
+      <div class="row">
+        <div class="col-md-12 text-center logo_heading">
+          WE'VE HELPED CANDIDATES GET JOBS IN TOP GLOBAL COMPANIES
+        </div>
+        <div class="col-md-12 logo_section d-flex align-items-center">
+          <div class="logo_container container">
+            <img
+              loading="lazy"
+              alt="Image Not Found"
+              src="./Logo svg/infosys.svg"
+            /><img
+              loading="lazy"
+              alt="Image Not Found"
+              style="margin-bottom: 1rem"
+              src="./Logo svg/accenture.svg"
+            /><img
+              loading="lazy"
+              alt="Image Not Found"
+              src="./Logo svg/deloitte.svg"
+            /><img
+              loading="lazy"
+              alt="Image Not Found"
+              src="./Logo svg/qualcomm.svg"
+            /><img
+              loading="lazy"
+              alt="Image Not Found"
+              src="./Logo svg/wipro.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container paddingTopBottom60 third_section">
+      <h1 class="build_your" style="text-align: center">
+        Resume<span class="text_blue"> Templates</span> for Every Profession
+      </h1>
+      <p style="text-align: left; margin-bottom: 2em">
+        Hiring Managers expect information to appear in standard formats or
+        close to it. Many companies and Job Portals use ATS (Applicant Tracking
+        System), searches for keywords and don't recognize certain types of
+        layouts, odd-shaped bullet points, columns, or creative fonts.
+      </p>
+      <div class="cvowl_common_small_btn_container">
+        <button class="cvowl_common_small_btn">Accounting</button>
+        <button class="cvowl_common_small_btn">Advertising</button>
+        <button class="cvowl_common_small_btn">Human resoursce</button>
+        <button class="cvowl_common_small_btn">Human resoursce</button>
+        <button class="cvowl_common_small_btn">Finance</button>
+        <button class="cvowl_common_small_btn">Engineering</button>
+        <button class="cvowl_common_small_btn">Marketing</button>
+        <button
+          class="cvowl_common_small_btn"
+          style="background-color: #ff007f; color: white"
+        >
+          View more +
+        </button>
+      </div>
+    </section>
+
+    <!-- <div class="carrousel container">
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg>
+          </a>
+          <img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_1.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg>
+          </a>
+          <img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_2.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom">
+            <svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg>
+          </a>
+          <img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_3.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg> </a
+          ><img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_1.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg> </a
+          ><img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_2.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg> </a
+          ><img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_3.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg> </a
+          ><img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_2.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg> </a
+          ><img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_2.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg> </a
+          ><img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_2.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg> </a
+          ><img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_2.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg> </a
+          ><img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_2.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg> </a
+          ><img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_3.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+      <div class="card-carrousel">
+        <div class="img-carrousel-container">
+          <a class="btn zoom"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+              <path d="m21 21-4.35-4.35"></path>
+              <path d="M11 8v6"></path>
+              <path d="M8 11h6"></path>
+            </svg> </a
+          ><img
+            loading="lazy"
+            alt="Image Not Found"
+            width="100%"
+            height=""
+            src="img/image_asset_3.png"
+          />
+          <a
+            href=""
+            class="start-with-template-btn btn btn-primary"
+            style="margin-bottom: 10px"
+            >Start with this template
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container-fluid overflowX">
+      <div class="what_say_customers_card_container pauseCarrousel">
+        <div class="card-carrousel">
+          <div class="img-carrousel-container">
+            <a class="btn zoom"
+              ><svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                <path d="m21 21-4.35-4.35"></path>
+                <path d="M11 8v6"></path>
+                <path d="M8 11h6"></path>
+              </svg>
+            </a>
+            <img
+              loading="lazy"
+              alt="Image Not Found"
+              width="100%"
+              height=""
+              src="img/image_asset_1.png"
+            />
+            <a
+              href=""
+              class="start-with-template-btn btn btn-primary"
+              style="margin-bottom: 10px"
+              >Start with this template
+            </a>
+          </div>
+        </div>
+        <div class="card-carrousel">
+          <div class="img-carrousel-container">
+            <a class="btn zoom"
+              ><svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                <path d="m21 21-4.35-4.35"></path>
+                <path d="M11 8v6"></path>
+                <path d="M8 11h6"></path>
+              </svg>
+            </a>
+            <img
+              loading="lazy"
+              alt="Image Not Found"
+              width="100%"
+              height=""
+              src="img/image_asset_2.png"
+            />
+            <a
+              href=""
+              class="start-with-template-btn btn btn-primary"
+              style="margin-bottom: 10px"
+              >Start with this template
+            </a>
+          </div>
+        </div>
+
+        <div class="card-carrousel">
+          <div class="img-carrousel-container">
+            <a class="btn zoom"
+              ><svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                <path d="m21 21-4.35-4.35"></path>
+                <path d="M11 8v6"></path>
+                <path d="M8 11h6"></path>
+              </svg>
+            </a>
+            <img
+              loading="lazy"
+              alt="Image Not Found"
+              width="100%"
+              height=""
+              src="img/image_asset_3.png"
+            />
+            <a
+              href=""
+              class="start-with-template-btn btn btn-primary"
+              style="margin-bottom: 10px"
+              >Start with this template
+            </a>
+          </div>
+        </div>
+
+        <div class="card-carrousel">
+          <div class="img-carrousel-container">
+            <a class="btn zoom"
+              ><svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                <path d="m21 21-4.35-4.35"></path>
+                <path d="M11 8v6"></path>
+                <path d="M8 11h6"></path>
+              </svg>
+            </a>
+            <img
+              loading="lazy"
+              alt="Image Not Found"
+              width="100%"
+              height=""
+              src="img/image_asset_2.png"
+            />
+            <a
+              href=""
+              class="start-with-template-btn btn btn-primary"
+              style="margin-bottom: 10px"
+              >Start with this template
+            </a>
+          </div>
+        </div>
+        <div class="card-carrousel">
+          <div class="img-carrousel-container">
+            <a class="btn zoom"
+              ><svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                <path d="m21 21-4.35-4.35"></path>
+                <path d="M11 8v6"></path>
+                <path d="M8 11h6"></path>
+              </svg>
+            </a>
+            <img
+              loading="lazy"
+              alt="Image Not Found"
+              width="100%"
+              height=""
+              src="img/image_asset_2.png"
+            />
+            <a
+              href=""
+              class="start-with-template-btn btn btn-primary"
+              style="margin-bottom: 10px"
+              >Start with this template
+            </a>
+          </div>
+        </div>
+        <div class="card-carrousel">
+          <div class="img-carrousel-container">
+            <a class="btn zoom"
+              ><svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                <path d="m21 21-4.35-4.35"></path>
+                <path d="M11 8v6"></path>
+                <path d="M8 11h6"></path>
+              </svg>
+            </a>
+            <img
+              loading="lazy"
+              alt="Image Not Found"
+              width="100%"
+              height=""
+              src="img/image_asset_2.png"
+            />
+            <a
+              href=""
+              class="start-with-template-btn btn btn-primary"
+              style="margin-bottom: 10px"
+              >Start with this template
+            </a>
+          </div>
+        </div>
+        <div class="card-carrousel">
+          <div class="img-carrousel-container">
+            <a class="btn zoom"
+              ><svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                <path d="m21 21-4.35-4.35"></path>
+                <path d="M11 8v6"></path>
+                <path d="M8 11h6"></path>
+              </svg>
+            </a>
+            <img
+              loading="lazy"
+              alt="Image Not Found"
+              width="100%"
+              height=""
+              src="img/image_asset_2.png"
+            />
+            <a
+              href=""
+              class="start-with-template-btn btn btn-primary"
+              style="margin-bottom: 10px"
+              >Start with this template
+            </a>
+          </div>
+        </div>
+        <div class="card-carrousel">
+          <div class="img-carrousel-container">
+            <a class="btn zoom"
+              ><svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                <path d="m21 21-4.35-4.35"></path>
+                <path d="M11 8v6"></path>
+                <path d="M8 11h6"></path>
+              </svg>
+            </a>
+            <img
+              loading="lazy"
+              alt="Image Not Found"
+              width="100%"
+              height=""
+              src="img/image_asset_2.png"
+            />
+            <a
+              href=""
+              class="start-with-template-btn btn btn-primary"
+              style="margin-bottom: 10px"
+              >Start with this template
+            </a>
+          </div>
+        </div>
+        <div class="card-carrousel">
+          <div class="img-carrousel-container">
+            <a class="btn zoom"
+              ><svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                <path d="m21 21-4.35-4.35"></path>
+                <path d="M11 8v6"></path>
+                <path d="M8 11h6"></path>
+              </svg>
+            </a>
+            <img
+              loading="lazy"
+              alt="Image Not Found"
+              width="100%"
+              height=""
+              src="img/image_asset_2.png"
+            />
+            <a
+              href=""
+              class="start-with-template-btn btn btn-primary"
+              style="margin-bottom: 10px"
+              >Start with this template
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-carrousel">
+      <span>&times;</span>
+      <img
+        loading="lazy"
+        alt="Image Not Found"
+        max-width="100%"
+        height=""
+        src="img/image_asset_1.png"
+      />
+    </div>
+
+    <section class="forth_section">
+      <div class="row">
+        <!-- <div class="col-md-12 text-center logo_heading">WE'VE HELPED CANDIDATES GET JOBS IN TOP GLOBAL COMPANIES </div> -->
+        <div class="col-md-12 logo_section d-flex align-items-center">
+          <div class="d-flex flex-column container paddingTopBottom60">
+            <h1 class="build_your text-center marginBottom40">
+              <span class="text_blue">Why </span> build with CV Owl?
+            </h1>
+            <div class="row grid">
+              <div class="col-md-3 marginBottom20">
+                <div class="img_container" id="animation_container_ATS"></div>
+                <div class="img_container_text">
+                  <h2>ATS Compliant Templates</h2>
+                  <p>
+                    Templates designed in a way to pass any scanning test making
+                    sure your resume doesn't end up in the recruitment black
+                    hole.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 marginBottom20">
+                <div
+                  class="img_container"
+                  id="animation_container_AI_Keyword"
+                ></div>
+                <div class="img_container_text">
+                  <h2>AI Keyword Suggestion</h2>
+                  <p>
+                    Including keywords in your resume and cover letter increases
+                    your chances of landing a job interview. Get relevant
+                    keyword
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 contain marginBottom20">
+                <div
+                  class="img_container"
+                  id="animation_container_Proof_read"
+                ></div>
+                <div class="img_container_text" id="animation_container">
+                  <h2>Proof Reader</h2>
+                  <p>
+                    Typos and spelling errors on your resume can quickly
+                    undermine your chances of getting the job. Luckily, we’ve
+                    got it covered for you..
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row grid">
+              <div class="col-md-3">
+                <div
+                  class="img_container"
+                  id="animation_container_Achievement"
+                ></div>
+                <div class="img_container_text">
+                  <h2>Achievements Highlighter</h2>
+                  <p>
+                    Listing achievements is what differentiates the top
+                    candidates from the rest. Our builder allows you to
+                    highlight your skills with solid-proofs in the resume
+                    itself.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="img_container"
+                  id="animation_container_responsibility_verification"
+                ></div>
+                <div class="img_container_text" id="animation_container">
+                  <h2>Responsibilities Verification</h2>
+                  <p>
+                    Listing achievements is what differentiates the top
+                    candidates from the rest. Our builder allows you to
+                    highlight your skills with solid-proofs in the resume
+                    itself.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 marginBottom20">
+                <div
+                  class="img_container"
+                  id="animation_container_Video_resume"
+                ></div>
+                <div class="img_container_text">
+                  <h2>Video Resume</h2>
+                  <p>
+                    Give yourself an edge with a video resume with studies
+                    finding that visuals are processed 60,000x faster than text.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mx-auto thirdfold">
+              <button type="button" class="cvowl_common_btn show_back me-2">
+                Build Resume
+              </button>
+              <button type="button" class="cvowl_common_btn ms-2">
+                Build Cover Letter
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="container fifth_section paddingTopBottom60"
+      id="resume_review_service"
+    >
+      <div class="row fifth_row" id="resume_review_maker" style="margin-top: 0">
+        <div class="col-md-6 build_your_container">
+          <h1 class="build_your">
+            CV Review <span class="text_blue">Service</span>
+          </h1>
+          <p>
+            Does your CV pass the 10-second test? CV Owl has been working with
+            CVs and Resumes for quite 3 years for now and has become one among
+            the foremost prominent companies. Would you wish for a knowledgeable
+            opinion on your CV? If so, then why not try our CV review service.
+            <br /><br />
+            The aim of our service is to help you maximize the impact of your
+            CV, achieve your career goals and assist you create an interview
+            winning resume.
+          </p>
+
+          <button
+            type="button"
+            class="cvowl_common_btn show_back"
+            style="width: 30%"
+          >
+            Review My CV
+          </button>
+        </div>
+
+        <div class="" id="progress_image"></div>
+        <!-- <img
+          loading="lazy"
+          alt="Image Not Found"
+          width="400px"
+          height=""
+          class=""
+          src="img/reviewe_it_in_60_second.svg"
+        /> -->
+      </div>
+
+      <!-- <div class="row fifth_row" id="cover_letter_maker">
+        <img
+          loading="lazy"
+          alt="Image Not Found"
+          width="400px"
+          height=""
+          class="cover_letter_maker_img"
+          src="img/reviewe_it_in_60_second.svg"
+        />
+
+        <div class="col-md-6 build_your_container">
+          <h1 class="build_your">
+            Cover Letter <span class="text_blue">Maker</span>
+          </h1>
+          <p>
+            We make it easy to quickly create a professional cover letter that
+            will help convince companies to give you an interview. CV Owl’s
+            cover letter builder has helped over 3,000,000 job seekers build
+            professional cover letters to get shortlisted for more interviews.
+            <br /><br />
+            Start with pre-filled cover letter samples matching your profession
+            offered by CV Owl’s Free Cover Letter Builder. Create a perfect
+            cover letter and land your dream job with our Online Cover Letter
+            Builder.
+          </p>
+
+          <button
+            type="button"
+            class="cvowl_common_btn show_back"
+            style="width: 30%"
+          >
+            Build Cover Letter
+          </button>
+        </div>
+      </div>
+
+      <div class="row fifth_row" id="sop_builder">
+        <div class="col-md-6 build_your_container">
+          <h1 class="build_your">
+            Online <span class="text_blue">SOP Builder</span>
+          </h1>
+          <p>
+            The SOP is an introductory personal statement that students use to
+            present their profile for the purpose of VISA application. In the
+            process, many of them come across different forms of the statement
+            of purpose, making the whole process cumbersome.
+            <br /><br />
+            Our online SOP builder is designed to help you fill out each line of
+            your professional SOP quickly and easily. Just edit & put in your
+            information wherever required & our SOP builder will take care of
+            all the formatting to create a professional SOP in just a few
+            minutes.
+          </p>
+
+          <button
+            type="button"
+            class="cvowl_common_btn show_back"
+            style="width: 30%"
+          >
+            Build My SOP
+          </button>
+        </div>
+
+        <img
+          loading="lazy"
+          alt="Image Not Found"
+          width="400px"
+          height=""
+          class=""
+          src="img/reviewe_it_in_60_second.svg"
+        />
+      </div> -->
+    </section>
+
+    <section class="container-fluid sixth_section paddingTopBottom60">
+      <h1 class="build_your text-center">
+        Our Customers<span class="text_blue"> Love Us </span>
+      </h1>
+      <div class="container overflowX">
+        <div class="what_say_customers_card_container">
+          <div class="customers-card-container">
+            <div class="customer-content">
+              <div class="review-para">
+                <p>
+                  “It was a pleasure to host CV Owl at our college campus for an
+                  interactive session on Resume building. The students benefited
+                  greatly as the company discussed the essential features of a
+                  CV, the main points to be covered herein, the difference
+                  between a CV and Resume and the importance of being aware of
+                  this difference while applying for jobs.”
+                </p>
+              </div>
+              <div class="rating_section stars">
+                <div id="half-stars-example">
+                  <div class="rating-group">
+                    <label
+                      aria-label="1 stars"
+                      class="rating__label"
+                      for="rating2-0"
+                      >&nbsp;</label
+                    >
+                    <label
+                      aria-label="0.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-05"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="1 star"
+                      class="rating__label"
+                      for="rating2-10"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="1.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-15"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="2 stars"
+                      class="rating__label"
+                      for="rating2-20"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="2.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-25"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="3 stars"
+                      class="rating__label"
+                      for="rating2-30"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="3.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-35"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="4 stars"
+                      class="rating__label"
+                      for="rating2-40"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="4.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-45"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="5 stars"
+                      class="rating__label"
+                      for="rating2-50"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviewer-col">
+              <div class="name-col"><h4>Niriksha</h4></div>
+              <div class="other-col">Vice President, IPCW - Placement Cell</div>
+            </div>
+          </div>
+
+          <div class="customers-card-container">
+            <div class="customer-content">
+              <div class="review-para">
+                <p>
+                  “The Training and Development Centre of JMC in collaboration
+                  with CV Owl successfully conducted a workshop on CV &amp;
+                  Resume Building. The students found the CV portal (designed
+                  free of cost for JMC students) to be exceptionally helpful
+                  both for creating the CV as well as reviewing it.”
+                </p>
+              </div>
+              <div class="rating_section stars">
+                <div id="half-stars-example">
+                  <div class="rating-group">
+                    <label
+                      aria-label="1 stars"
+                      class="rating__label"
+                      for="rating2-0"
+                      >&nbsp;</label
+                    >
+                    <label
+                      aria-label="0.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-05"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="1 star"
+                      class="rating__label"
+                      for="rating2-10"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="1.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-15"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="2 stars"
+                      class="rating__label"
+                      for="rating2-20"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="2.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-25"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="3 stars"
+                      class="rating__label"
+                      for="rating2-30"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="3.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-35"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="4 stars"
+                      class="rating__label"
+                      for="rating2-40"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="4.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-45"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="5 stars"
+                      class="rating__label"
+                      for="rating2-50"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviewer-col">
+              <div class="name-col"><h4>Ridhima Gupta</h4></div>
+              <div class="other-col">
+                Coordinator (NEEV - Placement Cell of Jesus and Mary College)
+              </div>
+            </div>
+          </div>
+
+          <div class="customers-card-container">
+            <div class="customer-content">
+              <div class="review-para">
+                <p>
+                  “We sincerely thank CV Owl and Mr. Ankur for delivering such
+                  amazing and informative webinar for our students and gave us
+                  chance to improve our CV's. In all, the session remained
+                  instrumental in giving the aspirants a proper direction to
+                  work for their dream jobs and career goals.”
+                </p>
+              </div>
+              <div class="rating_section stars">
+                <div id="half-stars-example">
+                  <div class="rating-group">
+                    <label
+                      aria-label="1 stars"
+                      class="rating__label"
+                      for="rating2-0"
+                      >&nbsp;</label
+                    >
+                    <label
+                      aria-label="0.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-05"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="1 star"
+                      class="rating__label"
+                      for="rating2-10"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="1.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-15"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="2 stars"
+                      class="rating__label"
+                      for="rating2-20"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="2.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-25"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="3 stars"
+                      class="rating__label"
+                      for="rating2-30"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="3.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-35"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="4 stars"
+                      class="rating__label"
+                      for="rating2-40"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="4.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-45"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="5 stars"
+                      class="rating__label"
+                      for="rating2-50"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviewer-col">
+              <div class="name-col"><h4>Astha</h4></div>
+              <div class="other-col">
+                Core Member, Placement Cell, Lakshmibai College
+              </div>
+            </div>
+          </div>
+
+          <div class="customers-card-container">
+            <div class="customer-content">
+              <div class="review-para">
+                <p>
+                  “We thank CV Owl for organising CV Building Webinar and CV
+                  clinics. The entire team worked exceptionally hard to review
+                  students resume within 48 hrs. The entire process was carried
+                  out in a very smooth manner and helped students to identify
+                  their mistake in their CVs.”
+                </p>
+              </div>
+              <div class="rating_section stars">
+                <div id="half-stars-example">
+                  <div class="rating-group">
+                    <label
+                      aria-label="1 stars"
+                      class="rating__label"
+                      for="rating2-0"
+                      >&nbsp;</label
+                    >
+                    <label
+                      aria-label="0.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-05"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="1 star"
+                      class="rating__label"
+                      for="rating2-10"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="1.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-15"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="2 stars"
+                      class="rating__label"
+                      for="rating2-20"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="2.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-25"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="3 stars"
+                      class="rating__label"
+                      for="rating2-30"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="3.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-35"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="4 stars"
+                      class="rating__label"
+                      for="rating2-40"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+
+                    <label
+                      aria-label="4.5 stars"
+                      class="rating__label rating__label--half"
+                      for="rating2-45"
+                      ><i
+                        class="rating__icon rating__icon--star fa fa-star-half"
+                      ></i
+                    ></label>
+
+                    <label
+                      aria-label="5 stars"
+                      class="rating__label"
+                      for="rating2-50"
+                      ><i class="rating__icon rating__icon--star fa fa-star"></i
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviewer-col">
+              <div class="name-col"><h4>Pranjal</h4></div>
+              <div class="other-col">
+                Core Member, Placement Cell, Keshav Mahavidyalaya
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-sm seventh_section paddingTopBottom20 text-center">
+      <div class="seventh_content my-6">
+        <h1 style="font-size: 28px; padding-bottom: 1rem">
+          Ready to get started on your new resume?
+        </h1>
+        <p style="font-size: 18px; padding-bottom: 1rem">
+          Don't let making a resume hold you back from getting the job you want.
+          Learn how our builder software can help you create a resume that
+          perfectly highlights your talents and lands you more interviews.
+        </p>
+        <button type="button" class="cvowl_common_btn show_back">
+          Build My Resume Now
+        </button>
+      </div>
+      <div class="seventh_image">
+        <img src="./Logo half.svg" width="300" height="auto" alt="" />
+      </div>
+    </div>
+
+    <div class="container eighth_section paddingTopBottom60">
+      <h1 style="font-size: 28px; margin-bottom: 2rem" class="text-center">
+        Frequently Asked Questions about CV Owl’s Resume Builder
+      </h1>
+      <h4 style="margin: 2rem 0">1. How can I create my resume?</h4>
+      <p style="font-size: 18px; margin-bottom: 2rem">
+        CV Owl’s free resume builder helps you create a recruiter preferred
+        resume with ease & quick. Just get started by selecting one of our
+        professional resume templates or pre-filled resume samples. You’ll be
+        redirected to our resume builder where you can enter your resume
+        details. Just fill-in the required content and you will have your
+        professional resume ready.
+      </p>
+      <hr style="background-color: rgb(50, 60, 255); height: 2px; border: 0" />
+      <h4 style="margin: 2rem 0">2. Can I build my resume for free?</h4>
+      <p style="font-size: 18px; margin-bottom: 2rem">
+        Yes, you can build your resume for free with our resume builder. All you
+        need to do is sign up and get access to our builder, professional resume
+        templates, suite of AI tools, all for free. Along with your resume, you
+        can also create a cover letter, create an SOP, without spending a single
+        dollar.
+      </p>
+      <hr style="background-color: rgb(50, 60, 255); height: 2px; border: 0" />
+      <h4 style="margin: 2rem 0">3. Why should I use a resume builder?</h4>
+      <p style="font-size: 18px; margin-bottom: 2rem">
+        An online resume builder makes it faster and easier for you to create a
+        resume. Just get started by picking a resume template, fill in the
+        details, and you’re ready to start applying for your dream job. Whereas,
+        building your resume with Word is a challenging task. You make a small
+        edit to your resume, and the entire resume layout gets completely messed
+        up and takes a lot more time.
+      </p>
+      <hr style="background-color: rgb(50, 60, 255); height: 2px; border: 0" />
+      <h4 style="margin: 2rem 0">
+        4. Are resumes made with CV Owl ATS-friendly?
+      </h4>
+      <p style="font-size: 18px; margin-bottom: 2rem">
+        All of CV Owl’s resume & cover letter templates are totally
+        ATS-compliant. You can safely send your resume build with CV Owl resume
+        builder to any company, anywhere. The Applicant Tracking Systems will be
+        able to read, scan & understand your documents. Get started now by
+        choosing one of our ATS friendly resume templates and create your own
+        ATS friendly resume in minutes.
+      </p>
+
+      <hr style="background-color: rgb(50, 60, 255); height: 2px; border: 0" />
+      <h4 style="margin: 2rem 0">5. Should I use a resume template in 2023?</h4>
+      <p style="font-size: 18px; margin-bottom: 2rem">
+        Resume templates gives you a head start in the process of resume
+        writing. So you can definitely use one to begin with and tailor it to
+        the job application. CV Owl provides you with a collection of
+        professional & ATS friendly resume templates to choose from. Simply pick
+        one from any of them and start editing your resume with our online CV
+        Maker to land your dream job.
+      </p>
+
+      <span class="more-text">
+        <hr
+          style="background-color: rgb(50, 60, 255); height: 2px; border: 0"
+        />
+        <h4 style="margin: 2rem 0">
+          6. Should my resume be in PDF or Word format?
+        </h4>
+        <p style="font-size: 18px; margin-bottom: 2rem">
+          Resume templates gives you a head start in the process of resume
+          writing. So you can definitely use one to begin with and tailor it to
+          the job application. CV Owl provides you with a collection of
+          professional & ATS friendly resume templates to choose from. Simply
+          pick one from any of them and start editing your resume with our
+          online CV Maker to land your dream job.
+        </p>
+        <hr
+          style="background-color: rgb(50, 60, 255); height: 2px; border: 0"
+        />
+        <h4 style="margin: 2rem 0">
+          7. Can CV Owl review my resume when I’ve finished making it?
+        </h4>
+        <p style="font-size: 18px; margin-bottom: 2rem">
+          The CV Owl Resume Maker comes with a very useful and popular feature
+          called Resume Optimiser. While you are creating your resume, our
+          software will keep scanning your document. At the end, it will give
+          you a resume quality score & tips on what to improve. Once you are
+          done optimising it, you can also send it for an in-depth CV review by
+          our CV writing experts. So there really aren’t any excuses not to get
+          your CV reviewed by CV Owl.
+        </p>
+        <hr
+          style="background-color: rgb(50, 60, 255); height: 2px; border: 0"
+        />
+        <h4 style="margin: 2rem 0">
+          8. Should I send a cover letter with my resume?
+        </h4>
+        <p style="font-size: 18px; margin-bottom: 2rem">
+          Yes, of course you should definitely send a cover letter with your
+          resume. A cover letter gives the impression to the recruiter that you
+          you’re really serious and extra motivated to get the job. Cover
+          letters are tough to write sometimes, and thats exactly why we have
+          compiled pre-filled cover letter samples matching your profession.
+          Create a perfect cover letter and land your dream job with our Online
+          Cover Letter Builder.
+        </p>
+        <hr
+          style="background-color: rgb(50, 60, 255); height: 2px; border: 0"
+        />
+        <h4 style="margin: 2rem 0">9. Can you help me build a cover letter?</h4>
+        <p style="font-size: 18px; margin-bottom: 2rem">
+          Yes, we can help you build a cover letter online. Our cover letter
+          builder has helped over 3,000,000 job seekers build professional cover
+          letters to get shortlisted for more interviews. Start with pre-filled
+          cover letter samples matching your profession offered by CV Owl’s Free
+          Cover Letter Builder. Create a perfect cover letter and land your
+          dream job with our Online Cover Letter Builder.
+        </p>
+        <hr
+          style="background-color: rgb(50, 60, 255); height: 2px; border: 0"
+        />
+        <h4 style="margin: 2rem 0">10. Can you help me build a SOP?</h4>
+        <p style="font-size: 18px; margin-bottom: 2rem">
+          Yes, we can help you create an SOP online. Our online SOP builder is
+          designed to help you fill out each line of your professional SOP
+          quickly and easily. Additionally, we provide a pre-filled SOP template
+          for you to get started with. Just edit & put in your information
+          wherever required & our SOP builder will take care of all the
+          formatting & grammar for you to give your professional SOP in just a
+          few minutes.
+        </p>
+      </span>
+      <button type="button" class="cvowl_common_btn show_back read-more-btn">
+        Read More
+      </button>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-navy position-relative">
+      <div class="container space-bottom-1 position-relative z-index-2">
+        <div class="row justify-content-lg-between">
+          <div
+            class="col-lg-5 space-top-1 space-top-lg-1 text-white mb-7 mb-lg-0"
+          >
+            <div class="row-footer">
+              <!-- Contacts Info -->
+              <div class="col-sm-6 mb-7">
+                <h4 class="text-white mb-2">RESUME</h4>
+                <ul style="list-style-type: none; padding-left: 0">
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/"
+                      >Resume Builder</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white-70 font-size-1"
+                      href="/resume-writing/free-resume-samples"
+                      >Resume examples</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white-70 font-size-1"
+                      href="/resume/how-to-create-resume"
+                      >How to write a Resume</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white-70 font-size-1"
+                      href="/interviews/different-type-of-resume-formats"
+                      >Resume Formats</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white-70 font-size-1"
+                      href="/resume/resume-keywords-guide-cv-maker"
+                      >Resume Keywords</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/cv-review"
+                      >Resume Review</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/pricing"
+                      >Resume Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white-70 font-size-1"
+                      href="https://cvowl-blog.s3.us-east-2.amazonaws.com/articles/eBook+-+CV+Owl+(1).pdf"
+                      >Resume Guide</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- End Contacts Info -->
+
+              <!-- Contacts Info -->
+              <div class="col-sm-6 mb-5">
+                <h4 class="text-white mb-2">COVER LETTERS</h4>
+                <ul style="list-style-type: none; padding-left: 0">
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/"
+                      >Cover Letter Builder</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white-70 font-size-1"
+                      href="/cover-letter/cover-letter-types"
+                      >Cover Letter Types</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white-70 font-size-1"
+                      href="/coverletter/free-cover-letter-samples"
+                      >Cover Letter Samples</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white-70 font-size-1"
+                      href="/cover-letter/10-tips-to-write-professional-cover-letter"
+                      >Cover Letter Tips</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white-70 font-size-1"
+                      href="/cover-letter/how-to-write-a-cover-letter"
+                      >How to write Cover Letter</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white-70 font-size-1"
+                      href="/cover-letter/cover-letter-keywords"
+                      >Cover Letter Keywords</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/cv-review"
+                      >Cover Letter Review</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/pricing"
+                      >Cover Letter Services</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- End Contacts Info -->
+
+              <!-- Contacts Info -->
+              <div class="col-sm-6">
+                <h4 class="text-white mb-2">COMPANY</h4>
+                <ul style="list-style-type: none; padding-left: 0">
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/about-us"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/contact"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/blog">Blog</a>
+                  </li>
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/pricing"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/sitemap.xml"
+                      >Sitemap</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/partner-program"
+                      >Affiliate/Partners</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white-70 font-size-1"
+                      href="/legal/termsandconditions"
+                      >Terms & Condition</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-white-70 font-size-1" href="/legal/privacy"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white-70 font-size-1"
+                      href="https://jobs.cvowl.com"
+                      >Jobs</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- End Contacts Info -->
+
+              <div class="col-md-6">
+                <ul class="list-inline mb-0">
+                  <!-- Social Networks -->
+                  <li class="list-inline-item">
+                    <a
+                      class="btn btn-xs btn-icon btn-soft-light"
+                      target="_blank"
+                      href="https://www.facebook.com/cvowlresumebuilder"
+                      ><svg
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M22.5 12.063c0-5.799-4.702-10.5-10.5-10.5s-10.5 4.7-10.5 10.5c0 5.24 3.84 9.584 8.86 10.373v-7.337H7.692v-3.037h2.666V9.75c0-2.63 1.568-4.085 3.966-4.085 1.15 0 2.351.205 2.351.205v2.584h-1.324c-1.304 0-1.712.81-1.712 1.64v1.97h2.912l-.465 3.036H13.64v7.337c5.02-.788 8.859-5.131 8.859-10.373Z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      class="btn btn-xs btn-icon btn-soft-light"
+                      target="_blank"
+                      href="https://twitter.com/cv_owl"
+                      ><svg
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M23.25 5.133a9.46 9.46 0 0 1-2.65.717 4.57 4.57 0 0 0 2.03-2.512c-.908.53-1.9.903-2.932 1.101A4.647 4.647 0 0 0 16.327 3c-2.55 0-4.615 2.034-4.615 4.542a4.37 4.37 0 0 0 .119 1.036A13.158 13.158 0 0 1 2.315 3.83a4.485 4.485 0 0 0-.627 2.283c0 1.574.821 2.967 2.062 3.782a4.57 4.57 0 0 1-2.1-.567v.056c0 2.204 1.595 4.036 3.704 4.454a4.752 4.752 0 0 1-1.216.159c-.291 0-.582-.028-.868-.085.587 1.805 2.294 3.118 4.315 3.155a9.356 9.356 0 0 1-6.835 1.88A13.063 13.063 0 0 0 7.816 21c8.501 0 13.146-6.923 13.146-12.928 0-.197-.006-.394-.015-.586a9.304 9.304 0 0 0 2.303-2.353Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      class="btn btn-xs btn-icon btn-soft-light"
+                      target="_blank"
+                      href="https://www.linkedin.com/company/cvowl"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.82 1.5H3.294c-.957 0-1.794.69-1.794 1.635v17.566c0 .951.837 1.799 1.794 1.799h17.521c.963 0 1.685-.854 1.685-1.8V3.136c.006-.946-.722-1.635-1.68-1.635ZM8.01 19.005H5V9.65h3.01v9.354ZM6.61 8.228h-.022c-.963 0-1.586-.716-1.586-1.613C5.002 5.7 5.642 5 6.626 5c.984 0 1.587.695 1.608 1.614 0 .897-.624 1.613-1.625 1.613Zm12.395 10.777h-3.009V13.89c0-1.225-.438-2.063-1.526-2.063-.832 0-1.324.563-1.543 1.111-.082.197-.104.465-.104.739v5.328H9.815V9.65h3.008v1.301c.438-.623 1.122-1.52 2.713-1.52 1.975 0 3.469 1.301 3.469 4.108v5.465Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      class="btn btn-xs btn-icon btn-soft-light"
+                      target="_blank"
+                      href="https://www.youtube.com/channel/UCF5q6uNKsfAlZj6RHQ3K5yQ/videos"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M23.843 6.975c0-2.11-1.552-3.807-3.469-3.807A170.465 170.465 0 0 0 12.422 3h-.844c-2.7 0-5.353.047-7.95.169-1.912 0-3.464 1.706-3.464 3.815A69.732 69.732 0 0 0 0 11.99a72.582 72.582 0 0 0 .16 5.011c0 2.11 1.551 3.82 3.464 3.82 2.728.127 5.526.183 8.372.178 2.85.01 5.64-.05 8.371-.178 1.918 0 3.47-1.71 3.47-3.82a72.41 72.41 0 0 0 .159-5.016 68.19 68.19 0 0 0-.153-5.01Zm-14.14 9.614V7.378L16.5 11.98l-6.797 4.608Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      class="btn btn-xs btn-icon btn-soft-light"
+                      target="_blank"
+                      href="https://www.instagram.com/cv_owl"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.375 3.25a4.388 4.388 0 0 1 4.375 4.375v8.75a4.388 4.388 0 0 1-4.375 4.375h-8.75a4.389 4.389 0 0 1-4.375-4.375v-8.75A4.388 4.388 0 0 1 7.625 3.25h8.75Zm0-1.75h-8.75C4.256 1.5 1.5 4.256 1.5 7.625v8.75c0 3.369 2.756 6.125 6.125 6.125h8.75c3.369 0 6.125-2.756 6.125-6.125v-8.75c0-3.369-2.756-6.125-6.125-6.125Z"
+                        ></path>
+                        <path
+                          d="M17.688 7.625a1.313 1.313 0 1 1 0-2.625 1.313 1.313 0 0 1 0 2.625Z"
+                        ></path>
+                        <path
+                          d="M12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Zm0-1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- <li class="list-inline-item"><a class="btn btn-xs btn-icon btn-soft-light" target="_blank" href="https://in.pinterest.com/cvowl17"><i class="fab fa-pinterest"></i></a></li> -->
+                  <!-- End Social Networks -->
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-lg-n11">
+            <!-- Contact Form -->
+            <form class="card p-5" id="contactform">
+              <div class="mb-4">
+                <h3>Drop us a message</h3>
+              </div>
+
+              <div class="row-footer mx-n2">
+                <div class="col-md-6 px-2 mb-3">
+                  <!-- Input -->
+                  <label class="sr-only">First name</label>
+
+                  <div class="js-form-message">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="firstName"
+                        placeholder="First name"
+                        aria-label="First name"
+                        required
+                        data-msg="Please enter your first name."
+                      />
+                    </div>
+                  </div>
+                  <!-- End Input -->
+                </div>
+
+                <div class="col-md-6 px-2 mb-3">
+                  <!-- Input -->
+                  <label class="sr-only">Last name</label>
+
+                  <div class="js-form-message">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="lastName"
+                        placeholder="Last name"
+                        aria-label="Last name"
+                        required
+                        data-msg="Please enter your last name."
+                      />
+                    </div>
+                  </div>
+                  <!-- End Input -->
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col-md-6 px-2 mb-3">
+                  <!-- Input -->
+                  <label class="sr-only">Mobile</label>
+
+                  <div class="js-form-message">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="mobile"
+                        placeholder="Mobile"
+                        aria-label="Mobile"
+                        required
+                        data-msg="Please enter your Mobile."
+                      />
+                    </div>
+                  </div>
+                  <!-- End Input -->
+                </div>
+
+                <div class="col-md-6 px-2 mb-3">
+                  <!-- Input -->
+                  <label class="sr-only">Email address</label>
+
+                  <div class="js-form-message">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="email"
+                        placeholder="Email address"
+                        aria-label="Email address"
+                        required
+                        data-msg="Please enter a valid email address."
+                      />
+                    </div>
+                  </div>
+                  <!-- End Input -->
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col-md-6 px-2 mb-3">
+                  <!-- Input -->
+                  <label class="sr-only">Company</label>
+
+                  <div class="js-form-message">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="company"
+                        placeholder="Company"
+                        aria-label="Company"
+                        required
+                        data-msg="Please enter company name."
+                      />
+                    </div>
+                  </div>
+                  <!-- End Input -->
+                </div>
+
+                <div class="col-md-6 px-2 mb-3">
+                  <!-- Input -->
+                  <label class="sr-only">Job title</label>
+
+                  <div class="js-form-message">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="jobTitle"
+                        placeholder="Job title"
+                        aria-label="Job title"
+                        required
+                        data-msg="Please enter a job title."
+                      />
+                    </div>
+                  </div>
+                  <!-- End Input -->
+                </div>
+              </div>
+
+              <!-- Input -->
+              <div class="mb-5">
+                <label class="sr-only">How can we help you?</label>
+
+                <div class="js-form-message input-group">
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    name="message"
+                    placeholder="Hi there, I would like to ..."
+                    aria-label="Hi there, I would like to ..."
+                    required
+                    data-msg="Please enter a reason."
+                  ></textarea>
+                </div>
+              </div>
+              <!-- End Input -->
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-wide transition-3d-hover"
+              >
+                Submit
+              </button>
+            </form>
+            <!-- End Contact Form -->
+          </div>
+        </div>
+
+        <div class="text-center">
+          <!-- Logo -->
+          <a
+            class="d-inline-flex align-items-center mb-2"
+            href="index.html"
+            aria-label="Front"
+          >
+            <img
+              class="brand"
+              src="https://i.ibb.co/WHvVWqn/cvowllogo.png"
+              alt="Logo"
+            />
+          </a>
+          <!-- End Logo -->
+
+          <p class="small text-white-70">
+            Copyright © 2020 All rights reserved to
+            <a href="https://www.cvowl.com/" style="color: white">CV Owl</a>
+          </p>
+        </div>
+        <div class="row-footer align-items-md-center"></div>
+      </div>
+
+      <!-- SVG Background Shape -->
+      <figure class="w-100 position-absolute bottom-0 left-0">
+        <img
+          class="img-fluid"
+          src="./img/isometric-squares.svg"
+          alt="Image Description"
+        />
+      </figure>
+      <!-- End SVG Background Shape -->
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/homepagescript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+
+    <script>
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("progress_image"),
+        path: "Json/progres.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("animation_container_character"),
+        path: "Json/tick.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("animation_container_ATS"),
+        path: "Json/ATS.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("animation_container_AI_Keyword"),
+        path: "Json/Ai keyword.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("animation_container_Proof_read"),
+        path: "Json/Proof read.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("animation_container_Achievement"),
+        path: "Json/Achievement .json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById(
+          "animation_container_responsibility_verification"
+        ),
+        path: "Json/responsibility verification.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("animation_container_Video_resume"),
+        path: "Json/Video resume.json",
+        loop: true,
+        autoplay: true,
+        name: "demo animation",
+      });
+
+      //       var animationStart = 0;
+      //       $(window).scroll(function(){
+      //       animation.playSegments([animationStart,animationStart+1], true);
+      //       animationStart++;
+      // }
+    </script>
+
+    <script>
+      const readMoreBtn = document.querySelector(".read-more-btn");
+      const text = document.querySelector(".more-text");
+      readMoreBtn.addEventListener("click", (e) => {
+        text.classList.toggle("show-more");
+        if (readMoreBtn.innerText === "Read More") {
+          readMoreBtn.innerText = "Read Less";
+          text.style.display = "inline";
+        } else {
+          readMoreBtn.innerText = "Read More";
+          text.style.display = "none";
+        }
+      });
+    </script>
+
+    <script>
+      document.querySelectorAll(".card-carrousel img").forEach((image) => {
+        image.onclick = () => {
+          document.querySelector(".popup-carrousel").style.display = "block";
+          document.querySelector(".popup-carrousel img").src =
+            image.getAttribute("src");
+        };
+      });
+
+      document.querySelector(".popup-carrousel span").onclick = () => {
+        document.querySelector(".popup-carrousel").style.display = "none";
+      };
+    </script>
+  </body>
+</html>
