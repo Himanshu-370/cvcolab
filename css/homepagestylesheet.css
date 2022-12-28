@@ -468,6 +468,12 @@ body {
   margin-bottom: 0.4rem;
 }
 
+@media (max-width: 375px) {
+  .stars_rate {
+    font-size: 0.9rem;
+  }
+}
+
 #half-stars-example .rating-group {
   display: inline-flex;
   margin-top: 0.3em;
