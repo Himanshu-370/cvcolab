@@ -292,7 +292,7 @@ body {
 
 .what_say_customers_card_container {
   display: inline-flex;
-  animation: scroll 40s linear infinite;
+  animation: scroll 70s linear infinite;
   overflow-x: scroll;
 }
 
@@ -307,7 +307,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-350px * 3));
+    transform: translateX(-100%);
   }
 }
 
@@ -458,14 +458,13 @@ body {
 .rating_section {
   margin-top: 25px;
   display: flex;
-  align-content: center;
+  align-items: center;
 }
 
 .stars_rate {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   color: #000;
-  margin-top: 0.4em;
 }
 
 #half-stars-example .rating-group {
@@ -951,7 +950,6 @@ h4 {
 .logo_section {
   background-color: #ebe8ff;
   min-height: 100px;
-  /* place-content: center; */
 }
 
 .logo_container img {
