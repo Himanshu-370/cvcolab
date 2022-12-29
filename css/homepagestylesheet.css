@@ -252,11 +252,22 @@ body {
   padding-bottom: 20px;
 }
 
+.start_animation {
+  cursor: pointer;
+}
+
+.start_animation:hover {
+  scale: 1.1;
+  box-shadow: 1px 1px 12px grey;
+  border-radius: 16px;
+  transition: 0.5s ease;
+}
+
 .img_container {
   border-radius: 16px;
   background-color: #fff;
   height: 100%;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 .anim-img {
