@@ -253,11 +253,28 @@ body {
 }
 
 .img_container {
-  /* padding: 10px; */
   border-radius: 16px;
   background-color: #fff;
-  height: auto;
+  height: 100%;
   margin-bottom: 0.5rem;
+}
+
+.anim-img {
+  display: none;
+}
+
+.start_animation:hover .anim-img {
+  display: block;
+}
+
+.start_animation:hover .animation-img {
+  display: none;
+}
+
+.animation-img img {
+  padding: 2.2rem;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 767px) {
