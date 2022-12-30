@@ -254,6 +254,7 @@ body {
 
 .start_animation {
   cursor: pointer;
+  margin: 1.5rem 0;
 }
 
 .start_animation:hover {
@@ -388,7 +389,7 @@ body {
   border-radius: 0 0 6px 6px;
 }
 
-.customers-card-container:hover ~ .reviewer-col {
+.customers-card-container:hover .reviewer-col {
   background-image: -webkit-linear-gradient(
     150deg,
     #141da2 10%,
