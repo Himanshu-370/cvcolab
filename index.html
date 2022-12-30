@@ -1173,7 +1173,7 @@
             <h1 class="build_your text-center marginBottom40">
               <span class="text_blue">Why </span> build with CV Owl?
             </h1>
-            <div class="row grid">
+            <div class="row grid forth-grid">
               <div class="col-md-3 marginBottom20 start_animation">
                 <div
                   class="img_container anim-img"
@@ -1418,7 +1418,7 @@
         Our Customers<span class="text_blue"> Love Us </span>
       </h1>
       <div class="container overflowX">
-        <div class="what_say_customers_card_container">
+        <div class="what_say_customers_card_container pauseCarrousel">
           <div class="customers-card-container">
             <div class="customer-content">
               <div class="review-para">
@@ -3049,13 +3049,16 @@
     </script>
 
     <script>
-      document.querySelectorAll(".card-carrousel img").forEach((image) => {
-        image.onclick = () => {
-          document.querySelector(".popup-carrousel").style.display = "block";
-          document.querySelector(".popup-carrousel img").src =
-            image.getAttribute("src");
-        };
-      });
+      document
+        .querySelectorAll(".card-carrousel img, .zoom svg")
+        .forEach((image) => {
+          image.onclick = () => {
+            console.log(image.getAttribute("src"));
+            document.querySelector(".popup-carrousel").style.display = "block";
+            document.querySelector(".popup-carrousel img").src =
+              image.getAttribute("src");
+          };
+        });
 
       document.querySelector(".popup-carrousel span").onclick = () => {
         document.querySelector(".popup-carrousel").style.display = "none";
