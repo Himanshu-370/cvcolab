@@ -83,6 +83,7 @@ body {
   border-bottom-left-radius: 0.3125rem;
   box-shadow: 0px 12px 15px rgb(255, 0, 127, 0.1);
   background-color: #ffff;
+  z-index: 1;
 }
 
 .dropdown_cont.cover_letter_dropdown {
@@ -255,6 +256,7 @@ body {
 .start_animation {
   cursor: pointer;
   margin: 1.5rem 0;
+  padding: 0.5rem 0;
 }
 
 .start_animation:hover {
@@ -322,7 +324,9 @@ body {
 .what_say_customers_card_container {
   display: inline-flex;
   animation: scroll 30s linear infinite;
-  overflow-x: scroll;
+  overflow-x: auto;
+  scroll-snap-type: mandatory;
+  /* scroll-snap-points-x: snapInterval(0%, 100%); */
 }
 
 .what_say_customers_card_container::-webkit-scrollbar {
@@ -389,14 +393,14 @@ body {
   border-radius: 0 0 6px 6px;
 }
 
-.customers-card-container:hover .reviewer-col {
+/* .customers-card-container:hover .reviewer-col {
   background-image: -webkit-linear-gradient(
     150deg,
     #141da2 10%,
     #9b5cf6 100%
   ) !important;
   color: white !important;
-}
+} */
 
 .what_our_customer .build_your {
   font-size: 40px;
@@ -427,6 +431,7 @@ body {
 .overflowX {
   /* overflow-x: auto; */
   overflow: hidden;
+  width: 100%;
 }
 
 .searches_input input {
@@ -816,15 +821,6 @@ h4 {
 }
 
 .card-carrousel {
-  /* scroll-snap-align: start;
-  border: 1px solid black;
-  border-radius: 1px;
-  min-height: 150px;
-  min-width: 250px;
-  display: block !important;
-  align-items: center !important;
-  justify-content: center !important;
-  cursor: pointer; */
   display: block;
   scroll-snap-align: start;
   cursor: pointer;
@@ -982,6 +978,7 @@ h4 {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  /* gap: 1rem; */
 }
 
 .logo_section {
