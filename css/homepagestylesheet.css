@@ -325,7 +325,7 @@ body {
   display: inline-flex;
   animation: scroll 30s linear infinite;
   overflow-x: auto;
-  scroll-snap-type: mandatory;
+  /* scroll-snap-type: mandatory; */
   /* scroll-snap-points-x: snapInterval(0%, 100%); */
 }
 
@@ -341,6 +341,20 @@ body {
   } */
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 950px) {
+  .company_animation {
+    animation: scroll 30s linear infinite;
+    display: inline-flex;
+    overflow-x: auto;
+  }
+
+  .company_animation::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
   }
 }
 
@@ -977,7 +991,8 @@ h4 {
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
+  width: 100%;
+  /* flex-wrap: wrap; */
   /* gap: 1rem; */
 }
 
