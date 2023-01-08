@@ -130,10 +130,10 @@ body {
   /* margin-bottom: 0.5rem; */
 }
 .cvowl_common_btn:hover {
-  border-color: #ed65a9;
+  border-color: #FF007F;
 }
 .cvowl_common_btn.show_back:hover {
-  background-color: #ed65a9;
+  background-color: #FF007F;
 }
 
 .cvowl_common_small_btn_container {
