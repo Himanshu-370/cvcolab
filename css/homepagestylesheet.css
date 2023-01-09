@@ -256,7 +256,7 @@ body {
 .start_animation {
   cursor: pointer;
   margin: 1.5rem 0;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
 }
 
 .start_animation:hover {
@@ -829,7 +829,7 @@ h4 {
   grid-auto-flow: column;
   gap: 1.2rem;
   margin: 0 2rem 2rem;
-  animation: scroll 30s linear infinite;
+  /* animation: scroll 30s linear infinite; */
   /* overflow-x: hidden; */
 }
 
@@ -850,7 +850,7 @@ h4 {
   scroll-snap-align: start;
   cursor: pointer;
   align-items: center;
-  height: auto;
+  height: 498px !important;
   width: 300px;
   margin-right: 1.2rem;
   border: 1px solid black;
@@ -858,8 +858,13 @@ h4 {
   background-color: #fff;
 }
 
+.card-carrousel img{
+  height: 100%;
+}
+
 .card-carrousel:hover {
   border: 3px solid #6c3099;
+  height: 494px;
 }
 
 .pauseCarrousel {
@@ -901,6 +906,11 @@ h4 {
 
 .img-carrousel-container:hover .btn.zoom {
   opacity: 1;
+}
+
+.start-with-template-btn {
+  background-color: #6c3099;
+  border: none;
 }
 
 .img-carrousel-container:hover .start-with-template-btn.btn {
@@ -1069,3 +1079,4 @@ h4 {
   display: flex;
   justify-content: center;
 }
+
