@@ -959,7 +959,7 @@ h4 {
 
 @media (max-width: 768px) {
   .popup-carrousel img {
-    max-width: 55%;
+    max-width: 85%;
   }
 }
 
@@ -1421,7 +1421,7 @@ h4 {
 }
 
 .splide__slide {
-  width: 400px !important;
+  width: fit-content !important;
 }
 
 .splide__slide1 {
