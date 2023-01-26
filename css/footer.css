@@ -394,7 +394,7 @@ h6,
 .h6 {
   margin-bottom: 0.5rem;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.3;
   color: #1e2022;
 }
 
@@ -5267,6 +5267,7 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 0.0625rem solid #e7eaf3;
   border-radius: 0.3125rem;
+  margin-bottom: 2rem;
 }
 
 .card > hr {
@@ -15386,8 +15387,7 @@ button:focus {
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg.navbar {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem;
   }
   .navbar-expand-lg .navbar-brand,
   .navbar-expand-lg .navbar-brand > img {
@@ -21435,11 +21435,12 @@ label.btn {
   display: inline-block;
   color: #1e2022;
   background-color: #fff;
-  width: 2.6875rem;
-  height: 2.6875rem;
-  font-size: 0.8125rem;
+  width: 3.6875rem;
+  height: 3.6875rem;
+  font-size: 0.7125rem;
   cursor: pointer;
   transition: 0.3s;
+  border-radius: 50%;
 }
 
 .slick-arrow:hover {
