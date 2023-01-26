@@ -28,6 +28,14 @@
       rel="stylesheet"
       href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="css/homepagestylesheet.css" />
@@ -413,7 +421,7 @@
                 src="img\googlelogo.png"
               />
             </div>
-            <div id="half-stars-example">
+            <div class="half-stars-example">
               <div class="rating-group">
                 <label
                   aria-label="1 star"
@@ -462,114 +470,169 @@
 
     <!-- company carousel -->
     <section class="second_section">
-      <div class="row">
-        <div class="col-md-12 text-center logo_heading">
-          WE'VE HELPED CANDIDATES GET JOBS IN TOP GLOBAL COMPANIES
-        </div>
-        <div class="col-md-12 logo_section d-flex align-items-center">
-          <!-- <div class="logo_container container-fluid" style="flex-wrap: nowrap">
-            <img
-              class="company_animation"
-              loading="lazy"
-              alt="Image Not Found"
-              src="Logo svg\infosys.svg"
-            /><img
-              class="company_animation"
-              loading="lazy"
-              alt="Image Not Found"
-              style="margin-bottom: 1rem"
-              src="Logo svg\accenture.svg"
-            /><img
-              class="company_animation"
-              loading="lazy"
-              alt="Image Not Found"
-              src="Logo svg\deloitte.svg"
-            /><img
-              class="company_animation"
-              loading="lazy"
-              alt="Image Not Found"
-              src="Logo svg\qualcomm.svg"
-            /><img
-              class="company_animation"
-              loading="lazy"
-              alt="Image Not Found"
-              src="Logo svg\wipro.svg"
-            />
-          </div> -->
-          <div class="slider">
-            <div class="slide-track">
-              <div class="slide">
-                <img
-                  loading="lazy"
-                  alt="Image Not Found"
-                  src="Logo svg\infosys.svg"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  loading="lazy"
-                  alt="Image Not Found"
-                  src="Logo svg\accenture.svg"
-                  style="margin-bottom: 1rem"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  loading="lazy"
-                  alt="Image Not Found"
-                  src="Logo svg\deloitte.svg"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  loading="lazy"
-                  alt="Image Not Found"
-                  src="Logo svg\qualcomm.svg"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  loading="lazy"
-                  alt="Image Not Found"
-                  src="Logo svg\wipro.svg"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  loading="lazy"
-                  alt="Image Not Found"
-                  src="Logo svg\infosys.svg"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  loading="lazy"
-                  alt="Image Not Found"
-                  src="Logo svg\accenture.svg"
-                  style="margin-bottom: 1rem"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  loading="lazy"
-                  alt="Image Not Found"
-                  src="Logo svg\deloitte.svg"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  loading="lazy"
-                  alt="Image Not Found"
-                  src="Logo svg\qualcomm.svg"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  loading="lazy"
-                  alt="Image Not Found"
-                  src="Logo svg\wipro.svg"
-                />
-              </div>
+      <div class="col-md-12 text-center logo_heading">
+        WE'VE HELPED CANDIDATES GET JOBS IN TOP GLOBAL COMPANIES
+      </div>
+      <!-- <div id="gallery" class="logo_section">
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/infosys.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/accenture.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/deloitte.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/qualcomm.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/Spotify-Logo.wine.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/wipro.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/Amazon_(company)-Logo.wine.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/Microsoft-Logo.wine.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/infosys.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/accenture.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/deloitte.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/qualcomm.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/Spotify-Logo.wine.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/wipro.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/Amazon_(company)-Logo.wine.svg"
+        />
+        <img
+          class="companyImg"
+          loading="lazy"
+          alt="Image Not Found"
+          src="./Logo svg/Microsoft-Logo.wine.svg"
+        />
+      </div> -->
+
+      <div class="splide" id="splide1">
+        <div class="splide__track splide__track1">
+          <div class="splide__list" style="gap: 8rem !important">
+            <div class="splide__slide splide__slide1">
+              <img
+                src="./Logo svg/accenture.svg"
+                alt=""
+                width="180"
+                height="150"
+              />
+            </div>
+            <div class="splide__slide splide__slide1">
+              <img
+                src="./Logo svg/Amazon_(company)-Logo.wine.svg"
+                alt=""
+                width="180"
+                height="150"
+              />
+            </div>
+            <div class="splide__slide splide__slide1">
+              <img
+                src="./Logo svg/deloitte.svg"
+                alt=""
+                width="180"
+                height="150"
+              />
+            </div>
+            <div class="splide__slide splide__slide1">
+              <img
+                src="./Logo svg/infosys.svg"
+                alt=""
+                width="180"
+                height="150"
+              />
+            </div>
+            <div class="splide__slide splide__slide1">
+              <img
+                src="./Logo svg/Microsoft-Logo.wine.svg"
+                alt=""
+                width="180"
+                height="150"
+              />
+            </div>
+            <div class="splide__slide splide__slide1">
+              <img
+                src="./Logo svg/qualcomm.svg"
+                alt=""
+                width="180"
+                height="150"
+              />
+            </div>
+            <div class="splide__slide splide__slide1">
+              <img
+                src="./Logo svg/Spotify-Logo.wine.svg"
+                alt=""
+                width="180"
+                height="150"
+              />
+            </div>
+            <div class="splide__slide splide__slide1">
+              <img src="./Logo svg/wipro.svg" alt="" width="180" height="150" />
             </div>
           </div>
         </div>
@@ -605,1079 +668,347 @@
     </section>
 
     <!-- template carousel -->
-    <!-- <div class="container-fluid overflowX">
-      <div class="what_say_customers_card_container pauseCarrousel">
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
+    <div class="container-fluid overflowX">
+      <section
+        class="splide"
+        aria-label="Splide Basic HTML Example"
+        id="splide2"
+      >
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="splide__slide">
+              <a class="btn zoom"
+                ><svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                  <path d="m21 21-4.35-4.35"></path>
+                  <path d="M11 8v6"></path>
+                  <path d="M8 11h6"></path>
+                </svg>
+              </a>
+              <img
+                loading="lazy"
+                alt="Image Not Found"
+                width="100%"
+                height="auto"
+                src="img/template.jpg"
+              />
+              <a
+                href="#"
+                class="start-with-template-btn btn btn-primary signupBTN"
+                style="margin-bottom: 10px"
+                >Start with this template
+              </a>
+            </div>
+            <div class="splide__slide">
+              <a class="btn zoom"
+                ><svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                  <path d="m21 21-4.35-4.35"></path>
+                  <path d="M11 8v6"></path>
+                  <path d="M8 11h6"></path>
+                </svg>
+              </a>
+              <img
+                loading="lazy"
+                alt="Image Not Found"
+                width="100%"
+                height="auto"
+                src="img/template.jpg"
+              />
+              <a
+                href="#"
+                class="start-with-template-btn btn btn-primary signupBTN"
+                style="margin-bottom: 10px"
+                >Start with this template
+              </a>
+            </div>
+            <div class="splide__slide">
+              <a class="btn zoom"
+                ><svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                  <path d="m21 21-4.35-4.35"></path>
+                  <path d="M11 8v6"></path>
+                  <path d="M8 11h6"></path>
+                </svg>
+              </a>
+              <img
+                loading="lazy"
+                alt="Image Not Found"
+                width="100%"
+                height="auto"
+                src="img/template.jpg"
+              />
+              <a
+                href="#"
+                class="start-with-template-btn btn btn-primary signupBTN"
+                style="margin-bottom: 10px"
+                >Start with this template
+              </a>
+            </div>
+            <div class="splide__slide">
+              <a class="btn zoom"
+                ><svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                  <path d="m21 21-4.35-4.35"></path>
+                  <path d="M11 8v6"></path>
+                  <path d="M8 11h6"></path>
+                </svg>
+              </a>
+              <img
+                loading="lazy"
+                alt="Image Not Found"
+                width="100%"
+                height="auto"
+                src="img/template.jpg"
+              />
+              <a
+                href="#"
+                class="start-with-template-btn btn btn-primary signupBTN"
+                style="margin-bottom: 10px"
+                >Start with this template
+              </a>
+            </div>
+            <div class="splide__slide">
+              <a class="btn zoom"
+                ><svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                  <path d="m21 21-4.35-4.35"></path>
+                  <path d="M11 8v6"></path>
+                  <path d="M8 11h6"></path>
+                </svg>
+              </a>
+              <img
+                loading="lazy"
+                alt="Image Not Found"
+                width="100%"
+                height="auto"
+                src="img/template.jpg"
+              />
+              <a
+                href="#"
+                class="start-with-template-btn btn btn-primary signupBTN"
+                style="margin-bottom: 10px"
+                >Start with this template
+              </a>
+            </div>
+            <div class="splide__slide">
+              <a class="btn zoom"
+                ><svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                  <path d="m21 21-4.35-4.35"></path>
+                  <path d="M11 8v6"></path>
+                  <path d="M8 11h6"></path>
+                </svg>
+              </a>
+              <img
+                loading="lazy"
+                alt="Image Not Found"
+                width="100%"
+                height="auto"
+                src="img/template.jpg"
+              />
+              <a
+                href="#"
+                class="start-with-template-btn btn btn-primary signupBTN"
+                style="margin-bottom: 10px"
+                >Start with this template
+              </a>
+            </div>
+            <div class="splide__slide">
+              <a class="btn zoom"
+                ><svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                  <path d="m21 21-4.35-4.35"></path>
+                  <path d="M11 8v6"></path>
+                  <path d="M8 11h6"></path>
+                </svg>
+              </a>
+              <img
+                loading="lazy"
+                alt="Image Not Found"
+                width="100%"
+                height="auto"
+                src="img/template.jpg"
+              />
+              <a
+                href="#"
+                class="start-with-template-btn btn btn-primary signupBTN"
+                style="margin-bottom: 10px"
+                >Start with this template
+              </a>
+            </div>
+            <div class="splide__slide">
+              <a class="btn zoom"
+                ><svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                  <path d="m21 21-4.35-4.35"></path>
+                  <path d="M11 8v6"></path>
+                  <path d="M8 11h6"></path>
+                </svg>
+              </a>
+              <img
+                loading="lazy"
+                alt="Image Not Found"
+                width="100%"
+                height="auto"
+                src="img/template.jpg"
+              />
+              <a
+                href="#"
+                class="start-with-template-btn btn btn-primary signupBTN"
+                style="margin-bottom: 10px"
+                >Start with this template
+              </a>
+            </div>
+            <div class="splide__slide">
+              <a class="btn zoom"
+                ><svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                  <path d="m21 21-4.35-4.35"></path>
+                  <path d="M11 8v6"></path>
+                  <path d="M8 11h6"></path>
+                </svg>
+              </a>
+              <img
+                loading="lazy"
+                alt="Image Not Found"
+                width="100%"
+                height="auto"
+                src="img/template.jpg"
+              />
+              <a
+                href="#"
+                class="start-with-template-btn btn btn-primary signupBTN"
+                style="margin-bottom: 10px"
+                >Start with this template
+              </a>
+            </div>
+            <div class="splide__slide">
+              <a class="btn zoom"
+                ><svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                  <path d="m21 21-4.35-4.35"></path>
+                  <path d="M11 8v6"></path>
+                  <path d="M8 11h6"></path>
+                </svg>
+              </a>
+              <img
+                loading="lazy"
+                alt="Image Not Found"
+                width="100%"
+                height="auto"
+                src="img/template.jpg"
+              />
+              <a
+                href="#"
+                class="start-with-template-btn btn btn-primary signupBTN"
+                style="margin-bottom: 10px"
+                >Start with this template
+              </a>
+            </div>
           </div>
         </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height="#"
-              src="img\template.jpg"
-            />
-            <a
-              href=""
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-        <div class="card-carrousel">
-          <div class="img-carrousel-container">
-            <a class="btn zoom"
-              ><svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-                <path d="m21 21-4.35-4.35"></path>
-                <path d="M11 8v6"></path>
-                <path d="M8 11h6"></path>
-              </svg>
-            </a>
-            <img
-              loading="lazy"
-              alt="Image Not Found"
-              width="100%"
-              height=""
-              src="img\template.jpg"
-            />
-            <a
-              href="#"
-              class="start-with-template-btn btn btn-primary signupBTN"
-              style="margin-bottom: 10px"
-              >Start with this template
-            </a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <div
-      class="our_partners"
-      data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'
-      id=""
-    >
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
-      <div class="card-carrousel">
-        <div class="img-carrousel-container">
-          <a class="btn zoom">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
-              <path d="m21 21-4.35-4.35"></path>
-              <path d="M11 8v6"></path>
-              <path d="M8 11h6"></path>
-            </svg>
-          </a>
-          <img
-            class="slider_img"
-            loading="lazy"
-            alt="Image Not Found"
-            width="100%"
-            height=""
-            src="img\template.jpg"
-          />
-          <a
-            href=""
-            class="start-with-template-btn btn btn-primary"
-            style="margin-bottom: 10px"
-            >Start with this template
-          </a>
-        </div>
-      </div>
+      </section>
     </div>
 
     <!-- template carousel popup -->
@@ -1688,7 +1019,7 @@
         alt="Image Not Found"
         max-width="100%"
         height=""
-        src="img\image_asset_2.png"
+        src="img\template.jpg"
       />
     </div>
 
@@ -1863,491 +1194,489 @@
       <h1 class="build_your text-center">
         Our Customers<span class="text_blue"> Love Us </span>
       </h1>
-      <div class="container overflowX">
-        <div class="what_say_customers_card_container pauseCarrousel">
-          <div class="customers-card-container">
-            <div class="customer-content">
-              <div class="review-para">
-                <p>
-                  “It was a pleasure to host CV Owl at our college campus for an
-                  interactive session on Resume building. The students benefited
-                  greatly as the company discussed the essential features of a
-                  CV, the main points to be covered herein, the difference
-                  between a CV and Resume and the importance of being aware of
-                  this difference while applying for jobs.”
-                </p>
-              </div>
-              <div class="rating_section stars">
-                <div id="half-stars-example">
-                  <div class="rating-group">
-                    <label
-                      aria-label="1 star"
-                      class="rating__label"
-                      for="rating2-10"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
+      <div class="testimonial_slider">
+        <div class="customers-card-container">
+          <div class="customer-content">
+            <div class="review-para">
+              <p>
+                “It was a pleasure to host CV Owl at our college campus for an
+                interactive session on Resume building. The students benefited
+                greatly as the company discussed the essential features of a CV,
+                the main points to be covered herein, the difference between a
+                CV and Resume and the importance of being aware of this
+                difference while applying for jobs.”
+              </p>
+            </div>
+            <div class="rating_section stars">
+              <div class="half-stars-example">
+                <div class="rating-group">
+                  <label
+                    aria-label="1 star"
+                    class="rating__label"
+                    for="rating2-10"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
 
-                    <label
-                      aria-label="2 stars"
-                      class="rating__label"
-                      for="rating2-20"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
+                  <label
+                    aria-label="2 stars"
+                    class="rating__label"
+                    for="rating2-20"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
 
-                    <label
-                      aria-label="3 stars"
-                      class="rating__label"
-                      for="rating2-30"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
+                  <label
+                    aria-label="3 stars"
+                    class="rating__label"
+                    for="rating2-30"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
 
-                    <label
-                      aria-label="4 stars"
-                      class="rating__label"
-                      for="rating2-40"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
+                  <label
+                    aria-label="4 stars"
+                    class="rating__label"
+                    for="rating2-40"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
 
-                    <label
-                      aria-label="5 stars"
-                      class="rating__label"
-                      for="rating2-50"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-                  </div>
+                  <label
+                    aria-label="5 stars"
+                    class="rating__label"
+                    for="rating2-50"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
                 </div>
-              </div>
-            </div>
-
-            <div class="reviewer-col">
-              <div class="name-col"><h4>Niriksha</h4></div>
-              <div class="other-col">Vice President, IPCW - Placement Cell</div>
-            </div>
-          </div>
-
-          <div class="customers-card-container">
-            <div class="customer-content">
-              <div class="review-para">
-                <p>
-                  “The Training and Development Centre of JMC in collaboration
-                  with CV Owl successfully conducted a workshop on CV &amp;
-                  Resume Building. The students found the CV portal (designed
-                  free of cost for JMC students) to be exceptionally helpful
-                  both for creating the CV as well as reviewing it.”
-                </p>
-              </div>
-              <div class="rating_section stars">
-                <div id="half-stars-example">
-                  <div class="rating-group">
-                    <label
-                      aria-label="1 star"
-                      class="rating__label"
-                      for="rating2-10"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="2 stars"
-                      class="rating__label"
-                      for="rating2-20"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="3 stars"
-                      class="rating__label"
-                      for="rating2-30"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="4 stars"
-                      class="rating__label"
-                      for="rating2-40"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="5 stars"
-                      class="rating__label"
-                      for="rating2-50"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="reviewer-col">
-              <div class="name-col"><h4>Ridhima Gupta</h4></div>
-              <div class="other-col">
-                Coordinator (NEEV - Placement Cell of Jesus and Mary College)
               </div>
             </div>
           </div>
 
-          <div class="customers-card-container">
-            <div class="customer-content">
-              <div class="review-para">
-                <p>
-                  “We sincerely thank CV Owl and Mr. Ankur for delivering such
-                  amazing and informative webinar for our students and gave us
-                  chance to improve our CV's. In all, the session remained
-                  instrumental in giving the aspirants a proper direction to
-                  work for their dream jobs and career goals.”
-                </p>
-              </div>
-              <div class="rating_section stars">
-                <div id="half-stars-example">
-                  <div class="rating-group">
-                    <label
-                      aria-label="1 star"
-                      class="rating__label"
-                      for="rating2-10"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
+          <div class="reviewer-col">
+            <div class="name-col"><h4>Niriksha</h4></div>
+            <div class="other-col">Vice President, IPCW - Placement Cell</div>
+          </div>
+        </div>
 
-                    <label
-                      aria-label="2 stars"
-                      class="rating__label"
-                      for="rating2-20"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="3 stars"
-                      class="rating__label"
-                      for="rating2-30"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="4 stars"
-                      class="rating__label"
-                      for="rating2-40"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="5 stars"
-                      class="rating__label"
-                      for="rating2-50"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-                  </div>
-                </div>
-              </div>
+        <div class="customers-card-container">
+          <div class="customer-content">
+            <div class="review-para">
+              <p>
+                “The Training and Development Centre of JMC in collaboration
+                with CV Owl successfully conducted a workshop on CV &amp; Resume
+                Building. The students found the CV portal (designed free of
+                cost for JMC students) to be exceptionally helpful both for
+                creating the CV as well as reviewing it.”
+              </p>
             </div>
+            <div class="rating_section stars">
+              <div class="half-stars-example">
+                <div class="rating-group">
+                  <label
+                    aria-label="1 star"
+                    class="rating__label"
+                    for="rating2-10"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
 
-            <div class="reviewer-col">
-              <div class="name-col"><h4>Astha</h4></div>
-              <div class="other-col">
-                Core Member, Placement Cell, Lakshmibai College
+                  <label
+                    aria-label="2 stars"
+                    class="rating__label"
+                    for="rating2-20"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="3 stars"
+                    class="rating__label"
+                    for="rating2-30"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="4 stars"
+                    class="rating__label"
+                    for="rating2-40"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="5 stars"
+                    class="rating__label"
+                    for="rating2-50"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="customers-card-container">
-            <div class="customer-content">
-              <div class="review-para">
-                <p>
-                  “We thank CV Owl for organising CV Building Webinar and CV
-                  clinics. The entire team worked exceptionally hard to review
-                  students resume within 48 hrs. The entire process was carried
-                  out in a very smooth manner and helped students to identify
-                  their mistake in their CVs.”
-                </p>
-              </div>
-              <div class="rating_section stars">
-                <div id="half-stars-example">
-                  <div class="rating-group">
-                    <label
-                      aria-label="1 star"
-                      class="rating__label"
-                      for="rating2-10"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="2 stars"
-                      class="rating__label"
-                      for="rating2-20"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="3 stars"
-                      class="rating__label"
-                      for="rating2-30"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="4 stars"
-                      class="rating__label"
-                      for="rating2-40"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="5 stars"
-                      class="rating__label"
-                      for="rating2-50"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-                  </div>
-                </div>
-              </div>
+          <div class="reviewer-col">
+            <div class="name-col"><h4>Ridhima Gupta</h4></div>
+            <div class="other-col">
+              Coordinator (NEEV - Placement Cell of Jesus and Mary College)
             </div>
+          </div>
+        </div>
 
-            <div class="reviewer-col">
-              <div class="name-col"><h4>Pranjal</h4></div>
-              <div class="other-col">
-                Core Member, Placement Cell, Keshav Mahavidyalaya
+        <div class="customers-card-container">
+          <div class="customer-content">
+            <div class="review-para">
+              <p>
+                “We sincerely thank CV Owl and Mr. Ankur for delivering such
+                amazing and informative webinar for our students and gave us
+                chance to improve our CV's. In all, the session remained
+                instrumental in giving the aspirants a proper direction to work
+                for their dream jobs and career goals.”
+              </p>
+            </div>
+            <div class="rating_section stars">
+              <div class="half-stars-example">
+                <div class="rating-group">
+                  <label
+                    aria-label="1 star"
+                    class="rating__label"
+                    for="rating2-10"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="2 stars"
+                    class="rating__label"
+                    for="rating2-20"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="3 stars"
+                    class="rating__label"
+                    for="rating2-30"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="4 stars"
+                    class="rating__label"
+                    for="rating2-40"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="5 stars"
+                    class="rating__label"
+                    for="rating2-50"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="customers-card-container">
-            <div class="customer-content">
-              <div class="review-para">
-                <p>
-                  “It was a pleasure to host CV Owl at our college campus for an
-                  interactive session on Resume building. The students benefited
-                  greatly as the company discussed the essential features of a
-                  CV, the main points to be covered herein, the difference
-                  between a CV and Resume and the importance of being aware of
-                  this difference while applying for jobs.”
-                </p>
-              </div>
-              <div class="rating_section stars">
-                <div id="half-stars-example">
-                  <div class="rating-group">
-                    <label
-                      aria-label="1 star"
-                      class="rating__label"
-                      for="rating2-10"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="2 stars"
-                      class="rating__label"
-                      for="rating2-20"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="3 stars"
-                      class="rating__label"
-                      for="rating2-30"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="4 stars"
-                      class="rating__label"
-                      for="rating2-40"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="5 stars"
-                      class="rating__label"
-                      for="rating2-50"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="reviewer-col">
-              <div class="name-col"><h4>Niriksha</h4></div>
-              <div class="other-col">Vice President, IPCW - Placement Cell</div>
+          <div class="reviewer-col">
+            <div class="name-col"><h4>Astha</h4></div>
+            <div class="other-col">
+              Core Member, Placement Cell, Lakshmibai College
             </div>
           </div>
+        </div>
 
-          <div class="customers-card-container">
-            <div class="customer-content">
-              <div class="review-para">
-                <p>
-                  “The Training and Development Centre of JMC in collaboration
-                  with CV Owl successfully conducted a workshop on CV &amp;
-                  Resume Building. The students found the CV portal (designed
-                  free of cost for JMC students) to be exceptionally helpful
-                  both for creating the CV as well as reviewing it.”
-                </p>
-              </div>
-              <div class="rating_section stars">
-                <div id="half-stars-example">
-                  <div class="rating-group">
-                    <label
-                      aria-label="1 star"
-                      class="rating__label"
-                      for="rating2-10"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="2 stars"
-                      class="rating__label"
-                      for="rating2-20"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="3 stars"
-                      class="rating__label"
-                      for="rating2-30"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="4 stars"
-                      class="rating__label"
-                      for="rating2-40"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="5 stars"
-                      class="rating__label"
-                      for="rating2-50"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-                  </div>
-                </div>
-              </div>
+        <div class="customers-card-container">
+          <div class="customer-content">
+            <div class="review-para">
+              <p>
+                “We thank CV Owl for organising CV Building Webinar and CV
+                clinics. The entire team worked exceptionally hard to review
+                students resume within 48 hrs. The entire process was carried
+                out in a very smooth manner and helped students to identify
+                their mistake in their CVs.”
+              </p>
             </div>
+            <div class="rating_section stars">
+              <div class="half-stars-example">
+                <div class="rating-group">
+                  <label
+                    aria-label="1 star"
+                    class="rating__label"
+                    for="rating2-10"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
 
-            <div class="reviewer-col">
-              <div class="name-col"><h4>Ridhima Gupta</h4></div>
-              <div class="other-col">
-                Coordinator (NEEV - Placement Cell of Jesus and Mary College)
+                  <label
+                    aria-label="2 stars"
+                    class="rating__label"
+                    for="rating2-20"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="3 stars"
+                    class="rating__label"
+                    for="rating2-30"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="4 stars"
+                    class="rating__label"
+                    for="rating2-40"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="5 stars"
+                    class="rating__label"
+                    for="rating2-50"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="customers-card-container">
-            <div class="customer-content">
-              <div class="review-para">
-                <p>
-                  “We sincerely thank CV Owl and Mr. Ankur for delivering such
-                  amazing and informative webinar for our students and gave us
-                  chance to improve our CV's. In all, the session remained
-                  instrumental in giving the aspirants a proper direction to
-                  work for their dream jobs and career goals.”
-                </p>
-              </div>
-              <div class="rating_section stars">
-                <div id="half-stars-example">
-                  <div class="rating-group">
-                    <label
-                      aria-label="1 star"
-                      class="rating__label"
-                      for="rating2-10"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="2 stars"
-                      class="rating__label"
-                      for="rating2-20"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="3 stars"
-                      class="rating__label"
-                      for="rating2-30"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="4 stars"
-                      class="rating__label"
-                      for="rating2-40"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-
-                    <label
-                      aria-label="5 stars"
-                      class="rating__label"
-                      for="rating2-50"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-                  </div>
-                </div>
-              </div>
+          <div class="reviewer-col">
+            <div class="name-col"><h4>Pranjal</h4></div>
+            <div class="other-col">
+              Core Member, Placement Cell, Keshav Mahavidyalaya
             </div>
+          </div>
+        </div>
 
-            <div class="reviewer-col">
-              <div class="name-col"><h4>Astha</h4></div>
-              <div class="other-col">
-                Core Member, Placement Cell, Lakshmibai College
+        <div class="customers-card-container">
+          <div class="customer-content">
+            <div class="review-para">
+              <p>
+                “It was a pleasure to host CV Owl at our college campus for an
+                interactive session on Resume building. The students benefited
+                greatly as the company discussed the essential features of a CV,
+                the main points to be covered herein, the difference between a
+                CV and Resume and the importance of being aware of this
+                difference while applying for jobs.”
+              </p>
+            </div>
+            <div class="rating_section stars">
+              <div class="half-stars-example">
+                <div class="rating-group">
+                  <label
+                    aria-label="1 star"
+                    class="rating__label"
+                    for="rating2-10"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="2 stars"
+                    class="rating__label"
+                    for="rating2-20"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="3 stars"
+                    class="rating__label"
+                    for="rating2-30"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="4 stars"
+                    class="rating__label"
+                    for="rating2-40"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="5 stars"
+                    class="rating__label"
+                    for="rating2-50"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="customers-card-container">
-            <div class="customer-content">
-              <div class="review-para">
-                <p>
-                  “We thank CV Owl for organising CV Building Webinar and CV
-                  clinics. The entire team worked exceptionally hard to review
-                  students resume within 48 hrs. The entire process was carried
-                  out in a very smooth manner and helped students to identify
-                  their mistake in their CVs.”
-                </p>
-              </div>
-              <div class="rating_section stars">
-                <div id="half-stars-example">
-                  <div class="rating-group">
-                    <label
-                      aria-label="1 star"
-                      class="rating__label"
-                      for="rating2-10"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
+          <div class="reviewer-col">
+            <div class="name-col"><h4>Niriksha</h4></div>
+            <div class="other-col">Vice President, IPCW - Placement Cell</div>
+          </div>
+        </div>
 
-                    <label
-                      aria-label="2 stars"
-                      class="rating__label"
-                      for="rating2-20"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
+        <div class="customers-card-container">
+          <div class="customer-content">
+            <div class="review-para">
+              <p>
+                “The Training and Development Centre of JMC in collaboration
+                with CV Owl successfully conducted a workshop on CV &amp; Resume
+                Building. The students found the CV portal (designed free of
+                cost for JMC students) to be exceptionally helpful both for
+                creating the CV as well as reviewing it.”
+              </p>
+            </div>
+            <div class="rating_section stars">
+              <div class="half-stars-example">
+                <div class="rating-group">
+                  <label
+                    aria-label="1 star"
+                    class="rating__label"
+                    for="rating2-10"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
 
-                    <label
-                      aria-label="3 stars"
-                      class="rating__label"
-                      for="rating2-30"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
+                  <label
+                    aria-label="2 stars"
+                    class="rating__label"
+                    for="rating2-20"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
 
-                    <label
-                      aria-label="4 stars"
-                      class="rating__label"
-                      for="rating2-40"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
+                  <label
+                    aria-label="3 stars"
+                    class="rating__label"
+                    for="rating2-30"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
 
-                    <label
-                      aria-label="5 stars"
-                      class="rating__label"
-                      for="rating2-50"
-                      ><i class="rating__icon rating__icon--star fa fa-star"></i
-                    ></label>
-                  </div>
+                  <label
+                    aria-label="4 stars"
+                    class="rating__label"
+                    for="rating2-40"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="5 stars"
+                    class="rating__label"
+                    for="rating2-50"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="reviewer-col">
-              <div class="name-col"><h4>Pranjal</h4></div>
-              <div class="other-col">
-                Core Member, Placement Cell, Keshav Mahavidyalaya
+          <div class="reviewer-col">
+            <div class="name-col"><h4>Ridhima Gupta</h4></div>
+            <div class="other-col">
+              Coordinator (NEEV - Placement Cell of Jesus and Mary College)
+            </div>
+          </div>
+        </div>
+
+        <div class="customers-card-container">
+          <div class="customer-content">
+            <div class="review-para">
+              <p>
+                “We sincerely thank CV Owl and Mr. Ankur for delivering such
+                amazing and informative webinar for our students and gave us
+                chance to improve our CV's. In all, the session remained
+                instrumental in giving the aspirants a proper direction to work
+                for their dream jobs and career goals.”
+              </p>
+            </div>
+            <div class="rating_section stars">
+              <div class="half-stars-example">
+                <div class="rating-group">
+                  <label
+                    aria-label="1 star"
+                    class="rating__label"
+                    for="rating2-10"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="2 stars"
+                    class="rating__label"
+                    for="rating2-20"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="3 stars"
+                    class="rating__label"
+                    for="rating2-30"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="4 stars"
+                    class="rating__label"
+                    for="rating2-40"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="5 stars"
+                    class="rating__label"
+                    for="rating2-50"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+                </div>
               </div>
+            </div>
+          </div>
+
+          <div class="reviewer-col">
+            <div class="name-col"><h4>Astha</h4></div>
+            <div class="other-col">
+              Core Member, Placement Cell, Lakshmibai College
+            </div>
+          </div>
+        </div>
+
+        <div class="customers-card-container">
+          <div class="customer-content">
+            <div class="review-para">
+              <p>
+                “We thank CV Owl for organising CV Building Webinar and CV
+                clinics. The entire team worked exceptionally hard to review
+                students resume within 48 hrs. The entire process was carried
+                out in a very smooth manner and helped students to identify
+                their mistake in their CVs.”
+              </p>
+            </div>
+            <div class="rating_section stars">
+              <div class="half-stars-example">
+                <div class="rating-group">
+                  <label
+                    aria-label="1 star"
+                    class="rating__label"
+                    for="rating2-10"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="2 stars"
+                    class="rating__label"
+                    for="rating2-20"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="3 stars"
+                    class="rating__label"
+                    for="rating2-30"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="4 stars"
+                    class="rating__label"
+                    for="rating2-40"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+
+                  <label
+                    aria-label="5 stars"
+                    class="rating__label"
+                    for="rating2-50"
+                    ><i class="rating__icon rating__icon--star fa fa-star"></i
+                  ></label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviewer-col">
+            <div class="name-col"><h4>Pranjal</h4></div>
+            <div class="other-col">
+              Core Member, Placement Cell, Keshav Mahavidyalaya
             </div>
           </div>
         </div>
@@ -2999,6 +2328,64 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/homepagescript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <script>
+      new Splide("#splide1", {
+        type: "loop",
+        // drag: false,
+        // focus: "center",
+        // perpage: 2,
+        autoScroll: {
+          speed: 1,
+        },
+        // autoplay: "pause",
+        loop: true,
+        rewind: true,
+        pauseOnHover: false,
+      });
+      new Splide("#splide1").mount(window.splide.Extensions);
+
+      new Splide("#splide2", {
+        type: "loop",
+        drag: "free",
+        focus: "center",
+        perpage: 5,
+        autoScroll: {
+          speed: 1,
+        },
+        arrows: false,
+        pagination: false,
+        autoplay: "pause",
+        loop: true,
+        rewind: true,
+      });
+      new Splide("#splide2").mount(window.splide.Extensions);
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".testimonial_slider").bxSlider({
+          mode: "horizontal",
+          infiniteLoop: true,
+          responsive: true,
+          pager: false,
+          auto: true,
+          controls: false,
+          pause: 2000,
+          slideWidth: 550,
+          adaptiveHeight: true,
+          minSlides: 1,
+          maxSlides: 3,
+          moveSlides: 1,
+          touchEnabled: true,
+          autoHover: true,
+        });
+      });
+    </script>
 
     <!-- gif load animation script -->
     <script>
@@ -3092,29 +2479,34 @@
     </script>
 
     <!-- template zoom btn script -->
-    <!-- <script>
-      document
-        .querySelectorAll(".card-carrousel img, .zoom svg")
-        .forEach((image) => {
-          image.onclick = () => {
-            console.log(image.getAttribute("src"));
-            document.querySelector(".popup-carrousel").style.display = "block";
-            document.querySelector(".popup-carrousel img").src =
-              image.getAttribute("src");
-          };
-        });
+    <script>
+      document.querySelectorAll(".splide__slide img").forEach((image) => {
+        image.onclick = () => {
+          console.log(image.getAttribute("src"));
+          document.querySelector(".popup-carrousel").style.display = "block";
+          document.querySelector(".popup-carrousel img").src =
+            image.getAttribute("src");
+        };
+      });
+
+      $(".zoom svg").click(function () {
+        $(".popup-carrousel")
+          .find("img")
+          .attr("src", $(this).parent().parent().find("img").attr("src"));
+        document.querySelector(".popup-carrousel").style.display = "block";
+      });
 
       document.querySelector(".popup-carrousel span").onclick = () => {
         document.querySelector(".popup-carrousel").style.display = "none";
       };
-    </script> -->
+    </script>
 
     <script type="text/javascript">
       var item_length = $(".our_partners > card-carrousel").length - 1;
       $(".our_partners").slick({
         autoplay: true,
         infinite: true,
-        speed: 9999,
+        speed: 900,
         autoplaySpeed: 0,
         fade: false,
         cssEase: "linear",
@@ -3125,42 +2517,76 @@
       });
     </script>
 
-    <script>
-      const carousel = document.querySelector(
-        ".what_say_customers_card_container"
-      );
-      let isDragging = false;
-      let currentX;
-      let initialX;
-      let xOffset = 0;
+    <script type="text/javascript">
+      $(".carouselNew").slick({
+        slidesToShow: 3,
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        infinite: true,
+        adaptiveHeight: true,
+        prevArrow: false,
+        nextArrow: false,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+            },
+          },
+        ],
+      });
 
-      carousel.addEventListener("mousedown", dragStart);
-      carousel.addEventListener("mouseup", dragEnd);
-      carousel.addEventListener("mousemove", drag);
+      $("#gallery").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 6000,
+        pauseOnHover: false,
+        centerMode: true,
+        infinite: true,
+        adaptiveHeight: true,
+        prevArrow: false,
+        nextArrow: false,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+        cssEase: "linear",
+      });
 
-      function dragStart(e) {
-        initialX = e.clientX - xOffset;
-
-        if (e.target === carousel) {
-          isDragging = true;
-        }
-      }
-
-      function dragEnd(e) {
-        initialX = currentX;
-
-        isDragging = false;
-      }
-
-      function drag(e) {
-        if (isDragging) {
-          e.preventDefault();
-          currentX = e.clientX - initialX;
-          xOffset = currentX;
-
-          carousel.style.transform = `translateX(${currentX}px)`;
-        }
-      }
+      // Slick version 1.5.8
     </script>
   </body>
 </html>
