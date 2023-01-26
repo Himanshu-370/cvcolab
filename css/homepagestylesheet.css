@@ -960,6 +960,7 @@ h4 {
 @media (max-width: 768px) {
   .popup-carrousel img {
     max-width: 85%;
+    top: 24rem;
   }
 }
 
