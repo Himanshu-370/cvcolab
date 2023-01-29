@@ -2198,16 +2198,10 @@
           slideWidth: 550,
           adaptiveHeight: true,
           minSlides: 1,
-          maxSlides: 3,
+          maxSlides: 10,
           moveSlides: 1,
           touchEnabled: true,
           autoHover: true,
-          // slideMargin: 10,
-          // speed: 40000,
-          // ticker: true,
-          // minSlides: 3,
-          // maxSlides: 10,
-          // slideWidth: 300,
         });
 
         $(".templateCarousel").bxSlider({
@@ -2219,7 +2213,6 @@
           slideWidth: 300,
           touchEnabled: true,
           tickerHover: true,
-          pause: 2000,
           infiniteLoop: true,
           responsive: true,
           pager: false,
@@ -2355,94 +2348,6 @@
       document.querySelector(".popup-carrousel span").onclick = () => {
         document.querySelector(".popup-carrousel").style.display = "none";
       };
-    </script>
-
-    <script type="text/javascript">
-      var item_length = $(".our_partners > card-carrousel").length - 1;
-      $(".our_partners").slick({
-        autoplay: true,
-        infinite: true,
-        speed: 900,
-        autoplaySpeed: 0,
-        fade: false,
-        cssEase: "linear",
-        pauseOnHover: true,
-        swipeToSlide: true,
-        slidesToShow: 5,
-        slidesToScrol1: 1,
-      });
-    </script>
-
-    <script type="text/javascript">
-      $(".carouselNew").slick({
-        slidesToShow: 3,
-        centerMode: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        pauseOnHover: true,
-        infinite: true,
-        adaptiveHeight: true,
-        prevArrow: false,
-        nextArrow: false,
-        variableWidth: true,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-            },
-          },
-        ],
-      });
-
-      $("#gallery").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 0,
-        speed: 6000,
-        pauseOnHover: false,
-        centerMode: true,
-        infinite: true,
-        adaptiveHeight: true,
-        prevArrow: false,
-        nextArrow: false,
-        variableWidth: true,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              slidesToShow: 3,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-        cssEase: "linear",
-      });
-
-      // Slick version 1.5.8
     </script>
   </body>
 </html>
