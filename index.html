@@ -494,9 +494,9 @@
         <div class="logos">
           <img alt="Image Not Found" src="./Logo svg/Spotify-Logo.wine.svg" />
         </div>
-        <div class="logos">
+        <!-- <div class="logos">
           <img alt="Image Not Found" src="./Logo svg/wipro.svg" />
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -2205,21 +2205,24 @@
         });
 
         $(".templateCarousel").bxSlider({
-          slideMargin: 15,
-          speed: 40000,
-          minSlides: 1,
-          maxSlides: 10,
-          slideWidth: 300,
+          mode: "horizontal",
           infiniteLoop: true,
+          slideMargin: 15,
           responsive: true,
           pager: false,
-          // auto: true,
+          auto: true,
           controls: false,
+          pause: 2000,
+          slideWidth: 550,
+          adaptiveHeight: true,
+          minSlides: 1,
+          maxSlides: 10,
+          moveSlides: 1,
           touchEnabled: true,
           autoHover: true,
-          ticker: true,
-          touchEnabled: true,
-          tickerHover: true,
+          // ticker: true,
+          // touchEnabled: true,
+          // tickerHover: true,
         });
 
         $(".companyLogo").bxSlider({
